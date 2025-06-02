@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+body {
+  background: #f2f2f2;
+  direction: rtl;
+  font-family: 'Amiri', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 21cm;
+  height: 29.7cm;
+  background: white;
+  margin: 2rem auto;
+  padding: 2.5cm 2cm;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.chapter-title {
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5cm;
+}
+
+.section-title {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1cm;
+}
+
+.content {
+  font-size: 14pt;
+  line-height: 2;
+  text-align: justify;
+  text-indent: 1cm;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 2cm;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12pt;
+}
+
+strong {
+  font-weight: bold;
+}
