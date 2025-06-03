@@ -1,35 +1,251 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-  <meta charset="UTF-8">
-  <title>الكتاب - قالب الصفحات</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القواعد العامة لتفسير النظام المنسق</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Importing Amiri Font */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+        body {
+            font-family: 'Amiri', serif;
+            /* Base text color is black, background is light gray via Tailwind */
+        }
+
+        /* Custom CSS for list counters - essential for specific numbering not covered by Tailwind */
+        .main-custom-list,
+        .sub-custom-list {
+            list-style-type: none;
+            /* Reset browser default */
+            padding-right: 0;
+            /* Base reset for RTL */
+        }
+
+        .main-custom-list {
+            counter-reset: main-counter;
+        }
+
+        .main-custom-list>li {
+            counter-increment: main-counter;
+            position: relative;
+            /* For ::before positioning */
+            /* Responsive padding-right for list numbers is handled by Tailwind on the <li> or a child <span> */
+        }
+
+        .main-custom-list>li::before {
+            content: counter(main-counter) " -";
+            /* Numbering format: "1 -", "2 -", etc. */
+            position: absolute;
+            right: 0;
+            /* Aligns number to the right for RTL */
+            top: 0.1em;
+            /* Fine-tune vertical alignment with Amiri font */
+            font-weight: normal;
+            /* Default weight for numbers */
+        }
+
+        .sub-custom-list {
+            counter-reset: sub-counter;
+            /* Responsive padding-right for sublist items is handled by Tailwind */
+        }
+
+        .sub-custom-list>li {
+            counter-increment: sub-counter;
+            position: relative;
+            /* For ::before positioning */
+        }
+
+        .sub-custom-list>li::before {
+            content: "(" counter(sub-counter, cjk-arabic-alphabetic) ") ";
+            /* Numbering format: "(ا)", "(ب)", etc. */
+            position: absolute;
+            right: 0;
+            /* Aligns number to the right for RTL */
+            top: 0.1em;
+            /* Fine-tune vertical alignment with Amiri font */
+            font-weight: normal;
+            /* Default weight for numbers */
+        }
+
+        /* Print-specific styles: Ensures clean page breaks and removes screen-only aesthetics */
+        @media print {
+            body {
+                background-color: #fff !important;
+                /* White background for printing */
+                -webkit-print-color-adjust: exact;
+                /* Ensures background colors and images are printed in Chrome/Safari */
+                print-color-adjust: exact;
+                /* Standard property */
+            }
+
+            .page {
+                page-break-after: always !important;
+                /* Each .page div will be a new page */
+                margin: 0 !important;
+                /* Remove screen margins */
+                box-shadow: none !important;
+                /* Remove screen shadow */
+                border: none !important;
+                /* Remove screen border */
+                width: auto !important;
+                /* Allow natural width for print */
+                min-height: auto !important;
+                /* Allow natural height for print */
+                padding: 1.5cm !important;
+                /* Consistent padding for print */
+            }
+
+            .page:last-child {
+                page-break-after: auto !important;
+                /* No page break after the last page */
+            }
+
+            /* Hide elements not meant for print if any (add class .no-print) */
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
-<body>
 
-  <!-- الصفحة 1 -->
-  <div class="page">
-    <h1 class="chapter-title">الفصل العاشر</h1>
-    <h2 class="section-title">حبوب</h2>
-    <div class="content">
-      <p><strong>ملاحظات:</strong></p>
-      <p>1 - أ - إن المنتجات المذكورة في بنود هذا الفصل لا تدخل فيها إلا إذا كانت حبوبا، وإن كانت هذه الحبوب في سنابل أو على سيقان.</p>
-      <p>ب - لا يشمل هذا الفصل الحبوب المشطورة أو المعالجة بطريقة أخرى...</p>
+<body class="bg-gray-100 text-black">
+    <div
+        class="page w-full lg:w-[21cm] min-h-screen lg:min-h-[29.7cm] bg-white mx-auto my-4 lg:my-8 py-8 px-4 sm:px-6 lg:pt-[2.5cm] lg:px-[2cm] lg:pb-[2cm] shadow-lg box-border relative">
+        <h1 class="text-center font-bold text-xl sm:text-2xl lg:text-[22pt] mb-2 sm:mb-3 lg:mb-[0.5cm]">القواعد العامة
+            لتفسير النظام المنسق</h1>
+        <p class="text-center text-base sm:text-lg lg:text-[16pt] mb-6 sm:mb-8 lg:mb-[1.5cm]">تتبع المبادئ التالية عند
+            تبنيد السلع في جدول التعريفة</p>
+
+        <h2 class="text-center font-bold text-lg sm:text-xl lg:text-[18pt] mb-4 sm:mb-6 lg:mb-[1cm] mt-0">القاعدة الأولى
+        </h2>
+        <p
+            class="text-right text-sm sm:text-base lg:text-[14pt] leading-relaxed lg:leading-[2] mb-6 sm:mb-8 lg:mb-[1.5cm] pb-1 sm:pb-2 lg:pb-[0.2cm] border-b border-black">
+            ليس لعناوين الأقسام أو الفصول أو الفصول الفرعية سوى قيمة إرشادية ؛ أما تبنيد السلع . فيجب أن يتحدد قانوناً
+            تبعاً لنصوص البنود والملاحظات الخاصة بالأقسام أو الفصول ، وتبعاً للقواعد التالية ، بشرط ألا تتعارض هذه
+            القواعد مع نصوص البنود والملاحظات .
+        </p>
+
+        <div class="text-sm sm:text-base lg:text-[14pt] leading-relaxed lg:leading-[2]">
+            <p class="text-right font-bold mb-3 sm:mb-4 lg:mb-[0.75cm]">ملاحظة تفسيرية :</p>
+            <ol class="main-custom-list text-justify">
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">يبين جدول النظام المنسق ، وفقا لترتيب
+                        خاص ، السلع المتداولة في التجارة الدولية ، وهو يجمع هذه السلع في أقسام وفصول فرعية ذات عناوين
+                        تبين على قدر الإمكان نوع المنتجات التي تشملها ، إلا أنه في كثير من الحالات فقد كان من المحال
+                        شمول جميع الأصناف أو ذكرها في العناوين ، نظرا لتنوعها وتعددها .</span>
+                </li>
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">لذلك ، فإن القاعدة الأولى تبدأ بالنص
+                        على أنه " ليس للعناوين سوى قيمة إرشادية " وبالتالي فإنه لا يترتب عليها أي أثر قانوني عند التبنيد
+                        .</span>
+                </li>
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">ينص الجزء الثاني من القاعدة على أن
+                        التبنيد يحدد كما يلي :</span>
+                    <ol class="sub-custom-list text-justify mt-1 lg:mt-[0.2cm] mb-1 lg:mb-[0.2cm] lg:pr-[0.5cm]">
+                        <li class="mb-1 lg:mb-[0.2cm] pr-12 lg:pr-[2.8em]">تبعاً لنصوص البنود وكذلك أى من ملاحظات
+                            الأقسام والفصول ذات العلاقة ؛</li>
+                        <li class="mb-1 lg:mb-[0.2cm] pr-12 lg:pr-[2.8em]">عند الاقتضاء تبعاً لأحكام القواعد الثانية
+                            والثالثة والرابعة والخامسة ما لم ينص على خلاف ذلك في نصوص البنود أو ملاحظات الأقسام أو
+                            الفصول .</li>
+                    </ol>
+                </li>
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">أن الأحكام الواردة في الفقرة 3 ( أ )
+                        أعلاه تحمل حجية ذاتية مسلم بها فكثير من السلع تبند في جدول النظام المنسق دون حاجة إلى الرجوع
+                        للقواعد التفسيرية ( مثال ذلك ، الخيول الحية البند ( 01.01 ) ، منتجات الصيدلة المحددة في الملاحظة
+                        الرابعة من الفصل الثلاثين ( البند ( 30.06 ) .</span>
+                </li>
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">في الفقرة 3 ( ب ) أعلاه ، يقصد بعبارة
+                        " ما لم ينص على خلاف ذلك في نصوص البنود أو الملاحظات " التوضيح دون لبس أن نصوص البنود وملاحظات
+                        الأقسام أو الفصول تسمو على ما عداها عند التبنيد ، و هذا يعنى أن لها الإعتبار الأول في التبنيد .
+                        فمثلاً، تنص ملاحظات الفصل الواحد والثلاثون على أن بنوداً معينة تشمل أصناف محددة فقط وبالتالي
+                        فإنه لا يمكن توسيع نطاق هذه البنود لتشمل أصنافاً كان يمكن أن تبند فيها بمقتضى أحكام القاعدة
+                        الثانية ( ب ) .</span>
+                </li>
+            </ol>
+        </div>
+
+        <p class="text-left text-xs sm:text-sm lg:text-[11pt] mt-8 lg:mt-[2cm] mb-12 lg:mb-[calc(1.5cm+12pt+0.5cm)]">
+            التعديل الخامس فبراير 1998</p>
+        <div
+            class="absolute bottom-4 lg:bottom-[1.5cm] left-0 right-0 text-center text-xs sm:text-sm lg:text-[12pt] font-normal">
+            ــ ١ ــ</div>
     </div>
-    <div class="page-number">صفحة 106</div>
-  </div>
+    <div
+        class="page w-full lg:w-[21cm] min-h-screen lg:min-h-[29.7cm] bg-white mx-auto my-4 lg:my-8 py-8 px-4 sm:px-6 lg:pt-[2.5cm] lg:px-[2cm] lg:pb-[2cm] shadow-lg box-border relative">
+        <h2 class="text-center font-bold text-lg sm:text-xl lg:text-[18pt] mb-4 sm:mb-6 lg:mb-[1cm] mt-0">القاعدة
+            الثانية</h2>
 
-  <!-- الصفحة 2 -->
-  <div class="page">
-    <div class="content">
-      <h2 class="section-title">اعتبارات عامة</h2>
-      <p>يشمل هذا الفصل الحبوب فقط، وإن قدمت في حزم أو في سنابل...</p>
+        <div class="text-sm sm:text-base lg:text-[14pt] leading-relaxed lg:leading-[2]">
+            <ol class="sub-custom-list text-justify mt-0 mb-4 lg:mb-[1cm] lg:pr-[0.5cm]">
+                <li class="mb-1 lg:mb-[0.2cm] pr-12 lg:pr-[2.8em]"><span
+                        class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">إن كل إشارة الى صنف ما في بند معين تشمل
+                        هذا الصنف وإن كان غير كامل أو غير تام الصنع بشرط أن تتوافر فيه ، بحالته التي يقدم بها ، الصفات
+                        الأساسية للصنف الكامل أو التام الصنع ، وتشمل هذه الإشارة كذلك الصنف الكامل أو التام الصنع أو
+                        الذي يعتبر في حكم الصنف الكامل أو التام الصنع بمقتضى أحكام هذه القاعدة ، سواء قدم مفككا أو غير
+                        مجمع.</span></li>
+                <li class="mb-1 lg:mb-[0.2cm] pr-12 lg:pr-[2.8em]"><span
+                        class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">إن كل إشارة الى مادة ما في بند معين تشمل
+                        هذه المادة سواء كانت صرفه أو مخلوطة أو مشتركة مع مواد أخر . وكذلك فإن أية إشارة الى سلعة ما من
+                        مادة معينة تشمل هذه السلعة المصنوعة كليا أو جزئيا من هذه المادة . وتبند هذه المنتجات المخلوطة أو
+                        المركبة وفقا للمبادىء المنصوص عليها في القاعدة ( الثالثة ) .</span></li>
+            </ol>
+
+            <h3
+                class="text-center font-bold text-base sm:text-lg lg:text-[16pt] mt-6 lg:mt-[1.5cm] mb-1 lg:mb-[0.25cm]">
+                القاعدة الثانية ( أ )</h3>
+            <p class="text-center text-sm sm:text-base lg:text-[14pt] mb-4 lg:mb-[1cm]">أصناف غير كاملة أو غير تامة
+                الصنع</p>
+
+            <ol class="main-custom-list text-justify">
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">إن الجزء الأول من هذه القاعدة يوسع
+                        نطاق أى بند يشير الى صنف معين ، بحيث لا يشمل الصنف الكامل فحسب بل يشمل أيضا الصنف غير الكامل أو
+                        غير تام الصنع ، بشرط أن تتوافر فيه بحالته التي يقدم بها الصفة الأساسية للصنف الكامل أو التام
+                        الصنع .</span>
+                </li>
+                <li class="mb-2 lg:mb-[0.3cm] pr-10 lg:pr-[2.5em]">
+                    <span class="block pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">تنطبق أحكام هذه القاعدة أيضاً على
+                        الأشكال الأولية " الغفل " ما لم تكن هذه الأصناف مذكورة تحديداً في بند خاص يقصد بعبارة " الغفل "
+                        الأصناف غير الجاهزة للإستعمال المباشر ذات الشكل التقريبي أو الخطوط الرئيسية للصنف أو الجزء التام
+                        الصنع أو التي يمكن أن تستخدم فقط ، إلا في حالات إستثنائية ، لإستكمال عملية تصنيعها الى أصناف أو
+                        أجزاء تامة الصنع ( مثل ، الأشكال الأولية للقناني من لدائن التي تمثل منتجات وسيطة ذات شكل أنبوبي
+                        ، أحد طرفيها مغلق والآخر مفتوح وملولب الأحكام عملية الإغلاق ، الجزء أسفل الطرف الملولب يكون
+                        معداً لأن يمدد إلى الحجم أو الشكل المطلوبين مثل ، الأشكال الأولية للقوارير و هي منتجات وسيطة
+                        أنبوبية الشكل مسدودة من جهة و مفتوحة من جهة أخرى و ملولبة الأعناق ليتم اغلاقها بسدادة ملولبة (
+                        محازنة الفوهة ، صمم القسم غير الملولب منها ليتمدد لاحقاً و يتخذ شكل و حجم القوارير المستخدمة في
+                        صناعة المشروبات الغازية ، معدة للصناعة ) .</span>
+                    <p class="mt-2 lg:mt-[0.5em] pl-2 lg:pl-0 lg:pr-0 lg:text-indent-[1cm]">
+                        أما المنتجات نصف المصنعة و التي ليس لها بعد الشكل الأساسي للأصناف التامة الصنع ( مثل القضبان
+                        والأقراص والأنابيب .. إلخ ) فإنها لا تعتبر أشكالاً أولية " غفل " .
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div
+            class="absolute bottom-4 lg:bottom-[1.5cm] left-0 right-0 text-center text-xs sm:text-sm lg:text-[12pt] font-normal mt-8 lg:mt-[2cm]">
+            ــ ٢ ــ</div>
     </div>
-    <div class="page-number">صفحة 107</div>
-  </div>
 
-  <!-- يمكنك تكرار صفحات جديدة هنا -->
+    <div
+        class="page w-full lg:w-[21cm] min-h-screen lg:min-h-[29.7cm] bg-white mx-auto my-4 lg:my-8 py-8 px-4 sm:px-6 lg:pt-[2.5cm] lg:px-[2cm] lg:pb-[2cm] shadow-lg box-border relative">
 
-  <script src="script.js"></script> <!-- اختياري -->
+    
+
+
+
+
+
+
+
+        <div
+            class="absolute bottom-4 lg:bottom-[1.5cm] left-0 right-0 text-center text-xs sm:text-sm lg:text-[12pt] font-normal mt-8 lg:mt-[2cm]">
+            ــ ٣ ــ</div>
+    </div>
 </body>
 </html>
