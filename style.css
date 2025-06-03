@@ -1,54 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+        /* Importing Amiri Font */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
-body {
-  background: #f2f2f2;
-  direction: rtl;
-  font-family: 'Amiri', serif;
-  margin: 0;
-  padding: 0;
-}
+        body {
+            font-family: 'Amiri', serif;
+            /* Base text color is black, background is light gray via Tailwind */
+        }
 
-.page {
-  width: 21cm;
-  height: 29.7cm;
-  background: white;
-  margin: 2rem auto;
-  padding: 2.5cm 2cm;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  position: relative;
-}
+        /* Custom CSS for list counters - essential for specific numbering not covered by Tailwind */
+        .main-custom-list,
+        .sub-custom-list {
+            list-style-type: none;
+            /* Reset browser default */
+            padding-right: 0;
+            /* Base reset for RTL */
+        }
 
-.chapter-title {
-  font-size: 22pt;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5cm;
-}
+        .main-custom-list {
+            counter-reset: main-counter;
+        }
 
-.section-title {
-  font-size: 18pt;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1cm;
-}
+        .main-custom-list>li {
+            counter-increment: main-counter;
+            position: relative;
+            /* For ::before positioning */
+            /* Responsive padding-right for list numbers is handled by Tailwind on the <li> or a child <span> */
+        }
 
-.content {
-  font-size: 14pt;
-  line-height: 2;
-  text-align: justify;
-  text-indent: 1cm;
-}
+        .main-custom-list>li::before {
+            content: counter(main-counter) " -";
+            /* Numbering format: "1 -", "2 -", etc. */
+            position: absolute;
+            right: 0;
+            /* Aligns number to the right for RTL */
+            top: 0.1em;
+            /* Fine-tune vertical alignment with Amiri font */
+            font-weight: normal;
+            /* Default weight for numbers */
+        }
 
-.page-number {
-  position: absolute;
-  bottom: 1.5cm; /* كان 2cm، نزيد المسافة بإزاحته لأسفل */
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 12pt;
-}
+        .sub-custom-list {
+            counter-reset: sub-counter;
+            /* Responsive padding-right for sublist items is handled by Tailwind */
+        }
 
+        .sub-custom-list>li {
+            counter-increment: sub-counter;
+            position: relative;
+            /* For ::before positioning */
+        }
 
-strong {
-  font-weight: bold;
-}
+        .sub-custom-list>li::before {
+            content: "(" counter(sub-counter, cjk-arabic-alphabetic) ") ";
+            /* Numbering format: "(ا)", "(ب)", etc. */
+            position: absolute;
+            right: 0;
+            /* Aligns number to the right for RTL */
+            top: 0.1em;
+            /* Fine-tune vertical alignment with Amiri font */
+            font-weight: normal;
+            /* Default weight for numbers */
+        }
+
+        /* Print-specific styles: Ensures clean page breaks and removes screen-only aesthetics */
+        @media print {
+            body {
+                background-color: #fff !important;
+                /* White background for printing */
+                -webkit-print-color-adjust: exact;
+                /* Ensures background colors and images are printed in Chrome/Safari */
+                print-color-adjust: exact;
+                /* Standard property */
+            }
+
+            .page {
+                page-break-after: always !important;
+                /* Each .page div will be a new page */
+                margin: 0 !important;
+                /* Remove screen margins */
+                box-shadow: none !important;
+                /* Remove screen shadow */
+                border: none !important;
+                /* Remove screen border */
+                width: auto !important;
+                /* Allow natural width for print */
+                min-height: auto !important;
+                /* Allow natural height for print */
+                padding: 1.5cm !important;
+                /* Consistent padding for print */
+            }
+
+            .page:last-child {
+                page-break-after: auto !important;
+                /* No page break after the last page */
+            }
+
+            /* Hide elements not meant for print if any (add class .no-print) */
+            .no-print {
+                display: none !important;
+            }
+        }
