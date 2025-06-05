@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكتاب - الغلاف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2; /* Tailwind: bg-gray-100 */
+      direction: rtl;
+      font-family: 'Amiri', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm; /* Use min-height for pages with varying content length */
+      background: white; /* Tailwind: bg-white */
+      margin: 2rem auto; /* Tailwind: my-8 mx-auto */
+      padding: 2.5cm 2cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Tailwind: shadow-lg */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    /* General text styles from example, can be overridden by more specific ones */
+    .chapter-title-style { /* Renamed to avoid conflict if used differently than example */
+      font-size: 22pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .section-title-style { /* Renamed */
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+    }
+    .content-style p, .content-style div, .content-style li { /* Applied to paragraphs/divs within content */
+      font-size: 14pt;
+      line-height: 2;
+      text-align: justify;
+    }
+    .content-style p { /* Indent only paragraphs directly under content, not in lists etc. unless specified */
+        text-indent: 1cm;
+    }
+    .page-number-style {
+      position: absolute;
+      bottom: 2cm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12pt;
+    }
+    strong {
+      font-weight: bold;
+    }
+
+    /* Custom styles for the cover page elements */
+    .cover-top-header {
+      font-size: 14pt;
+      text-align: center;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-main-title {
+      font-size: 40pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+      margin-top: 1cm; /* Adjusted */
+      letter-spacing: 2px; /* Optional: for stretched look */
+    }
+    .cover-subtitle {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2cm;
+    }
+    .cover-volume-title {
+      font-size: 28pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .cover-description {
+      font-size: 16pt;
+      text-align: center;
+      margin-bottom: 2.5cm; /* Adjusted */
+    }
+    .cover-translation-note {
+      font-size: 12pt;
+      text-align: center;
+      margin-top: auto; /* Pushes to bottom if flex container */
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-authority-section {
+      font-size: 12pt;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-final-note {
+      font-size: 11pt; /* Slightly larger than 10pt for readability */
+      text-align: justify;
+      margin-top: 1cm; /* Spacing from elements above */
+      /* margin-bottom: 2cm; /* Ensure it's above page bottom if no page number */
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– بشكل مسحوق أو حبيبات أو بأشكال صلبة أخر ، تحتوى على دسم بنسبة تزيد عن %1.5 وزناً</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0402.21</span> – – لاتحتوى على سكر مضاف أو أى مواد تحلية أخر</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0402.29</span> – – <span class="highlight">غيرهــا</span> :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– <span class="highlight">غيرهــا</span> :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0402.91</span> – – – لاتحتوى على سكر مضاف أو أى مواد تحلية أخر</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0402.99</span> – – – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند اللبن (كما هو معرف في الملاحظة 1 من هذا الفصل) والقشدة، المركزين (المبخرين، مثلاً) أو المحتويين على سكر مضاف أو مواد تحلية أخر ، سواء كانا سائلين أو على شكل عجائن أو بشكل صلب (كتل أو مسحوق أو حبيبات ) وسواء كانا محفوظين أو أعيد تركيبهما . قد يحتوى مسحوق اللبن على كميات قليلة من النشاء (لاتتجاوز %5 وزناً ) ، تمت إضافتها ، بصورة خاصة ، ليبقى اللبن المعاد تركيبه محتفظاً بحالته الطبيعية العادية .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">لايشمل البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – اللبن أو القشدة المخثرين أو المخمرين أو المحمضين (البند <span class="highlight">04.03</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">ب – المشروبات المكونة من اللبن المنكهة بالكاكاو أو بمواد أخر (البند <span class="highlight">22.02</span>) .</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.2cm; text-align: right;">ملاحظة البند <span class="highlight">الفرعــى</span> :</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;"><span class="highlight">البنــود الفرعيــة</span> <span class="highlight">0402.10</span> ، <span class="highlight">0402.21</span> ، <span class="highlight">0402.29</span> . لاتشمل هذه البنود الفرعية الألبان أو القشدة المركزة بشكل عجائن (البنود الفرعية <span class="highlight">0402.91</span> ، <span class="highlight">0402.99</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10pt; text-align: right; line-height:1.4;"><span class="highlight">04.03</span> <span class="highlight">مخيــض، لبــن وقشــدة مخثــران ، لبــن "زبــادى" ، كفيــر وغيــره من أنــواع الألبــان والقشــدة المخمــرة أو المحمضــة، وإن كانــت مركــزة أو محتــوية على سكــر مضــاف أو مــواد تحليــة أخــر أو منكهــة ، أو محتــوية على فواكــه أو أثمــار قشريــة (مكســرات) أو كاكــاو، مضافــة .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0403.10</span> – لبن " زبادى "</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0403.90</span> – غيرها</p>
+    </div>
+    <div class="page-number-style">51</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند مخيض اللبن، وكل الألبان والقشدة المخمرة أو المحمضة ويشمل اللبن والقشدة المخثران واللبن الرائب أو الزبادى والكفير . وقد تكون منتجات هذا البند بشكل سائل أو عجائن أو صلب (بما فيها المجمدة) كما قد تكون مركزة (مثل ، المبخرة أو بشكل كتل أو مسحوق أو حبيبات) أو محفوظة . قد يتألف اللبن المخمر في هذا البند من مسحوق اللبن المذكور في البند <span class="highlight">04.02</span> المحتوى على كميات قليلة من خمائر اللبن المضافة، لإستعمالها في تحضير منتجات اللحوم أو كإضافات معدة لتغذية الحيوان . بصرف النظر عن الإضافات المذكورة في الإعتبارات العامة لهذا الفصل، فقد تحتوى منتجات هذا البند أيضاً على سكر مضاف أو مواد تحلية أخر أو منكهات أو فواكه (بما فيها اللب والمربيات) أو أثمار قشرية (مكسرات) أو الكاكاو .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10pt; text-align: right; line-height:1.4;"><span class="highlight">04.04</span> <span class="highlight">مصــل اللبــن ، وإن كــان مركــزاً أو محتــوياً على سكــر مضــاف أو مــواد تحليــة ، منتجــات مكونــة من عناصــر حليــب طبيعيــة ، وإن كانــت محتــوية على سكــر مضاف أو مواد تحلية أخر ، غير مذكورة ولا داخلة في مكان أخر .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.5;"><span class="highlight">0404.10</span> – مصل اللبن ومصل اللبن المعدل وإن كان مركزاً أو محتوياً على سكر مضاف أو على مواد تحلية أخر</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0404.90</span> – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند مصل اللبن ( أى ، مكونات اللبن الطبيعية التي تتبقى بعد إزالة الدسم والكازيين (الجبنين)) وكذلك مصل اللبن المعدل ( أنظر ملاحظة البند الفرعي 1 لهذا الفصل ) . هذه المنتجات قد تكون على هيئة سائلة أو عجينية أو <span class="highlight">صلبــة</span> (بما فيه المجمد) ، كما يمكن أن تكون مركزة (بشكل مساحيق، مثلاً) أو محفوظة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل البند أيضاً المنتجات الطازجة أو المحفوظة التي تتألف من مكونات اللبن ، <span class="highlight">التى</span> ليس <span class="highlight">لهــا</span> ذات التركيب المنتج الطبيعي ، بشرط ألا تكون مذكورة بطريقة أكثر تخصيصاً في مكان أخر . وعليه فإن هذا البند يشمل المنتجات التي تفتقر الى واحد أو أكثر من مكونات اللبن الطبيعية، واللبن الذى أضيفت إليه مكونات اللبن الطبيعية (للحصول، مثلاً، على منتج غنى بالبروتين) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">بصرف النظر عن المكونات الطبيعية للبن والإضافات المذكورة في الإعتبارات العامة لهذا الفصل، فقد تحتوى منتجات هذا البند على سكر مضاف أو مواد تحلية أخر .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">قد تحتوى أيضاً المنتجات بشكل مساحيق في هذا البند ، خاصة مصل اللبن ، على كميات قليلة من خمائر اللبن المضافة ، لإستعمالها في منتجات اللحم المحضرة أو كإضافات لأغذية الحيوان .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm;"> ) ولايشمل <span class="highlight">البنــد</span> :</p>
+    </div>
+    <div class="page-number-style">52</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">أ – اللبن المنزوع <span class="highlight">قشــدته</span> أو اللبن المعاد تركيبه <span class="highlight">والذى</span> له نفس التركيب النوعى والكمى للببن الطبيعى (<span class="highlight">04.01</span> أو <span class="highlight">04.02</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – جبن مصل اللبن (البند <span class="highlight">04.06</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ج – <span class="highlight">المنتجــات</span> المتحصل عليها من مصل اللبن ، المحتوية على أكثر من %95 وزناً من اللاكتوز <span class="highlight">معبــراً</span> عنه بـ " لاكتوز لامائى " ، محسوباً على أساس المادة الجافة (البند <span class="highlight">17.02</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">د – محضرات الأغذية <span class="highlight">التى</span> أساسها عناصر اللبن الطبيعية ولكنها تحتوى على مواد أخر غير مسموح بها في منتجات هذا الفصل (خاصة ، البند <span class="highlight">19.01</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm; line-height:1.8;">هـ – الزلال " ألبومين" (بما فيه مركزات إثنين أو أكثر من بروتين مصل اللبن ، المحتوية وزناً على أكثر من %80 من بروتين مصل اللبن ، محسوبة على أساس المادة الجافة) (البند <span class="highlight">35.02</span>) أو الجلوبيولين (البند <span class="highlight">35.04</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10.5pt; text-align: right; line-height:1.4;"><span class="highlight">04.05</span> <span class="highlight">زبــدة وغيرهــا من مــواد دسمــة أخــر وزيــوت مشتقــة من اللبــن ؛ منتجــات ألبــان قابلــة للدهــن (للبســط) .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0405.10</span> – <span class="highlight">زبــدة</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0405.20</span> – منتجات ألبان قابلة للدهن (للبسط)</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0405.90</span> – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">أ – <span class="highlight">الزبــدة</span> : هذه المجموعة تشمل الزبد الطبيعي، زبد مصل اللبن ، والزبد المعاد تركيبه (طازجاً أو مملحاً أو زنخاً بما في ذلك الزبد المعلب)<span class="highlight">0</span> إن <span class="highlight">الزبــد</span> يجب أن يكون مشتق حصراً من اللبن وأن يحتوى على دسم لبن بنسبة %80 أو أكثر ولا تتجاوز %95 وزناً ، وعلى مواد صلبة غير دهنية بحد أقصى %2 وزناً ، وعلى الماء بحد أقصى %16 وزناً . الزبد يجب ألا يحتوى على مستحلبات مضافة ، ولكنه قد يحتوى على كلوريد الصوديوم ، ألوان غذائية ، أملاح تعادل وعلى بكتيريا مستنبتة غير ضارة منتجة لحمض اللبنيك (أنظر الملاحظة 2 ( أ ) من هذا الفصل ) . وتشمل هذه المجموعة أيضاً الزبد المتحصل عليه من لبن الماعز أو الأغنام .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ب – <span class="highlight">منتجــات ألبــان قابلــة للدهــن</span> . تشمل هذه المجموعة منتجات الألبان القابلة للدهن (للبسط) أى، وهى المستحلبات من نمط " الماء في الزيت"، القابلة للبسط والمحتوية على دسم اللبن بإعتباره الدسم الوحيد في المنتج ، ويكون محتواها من</p>
+    </div>
+    <div class="page-number-style">53</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm; line-height:1.9;">دسم اللبن بنسبة %39 أو أكثر ولكن أقل من %80 وزناً ( أنظر الملاحظة 2 (ب) لهذا الفصل ) . وقد تحتوى منتجات الألبان على مكونات إختيارية مثل بكتيريا مستنبتة غير ضارة المنتجة لحمض اللبنيك ، فيتامينات ، كلوريد الصوديوم ، سكر ، هلام، نشاء، ملونات غذائية ، منكهات، مستحلبات، عوامل تغليظ ومواد حافظة .</p>
+
+      <div style="text-align: right; margin-top: 10cm; font-size: 14pt;">(</div>
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+    </div>
+    <div class="page-number-style">54</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm; line-height:1.8;">ج – <span class="highlight">مــواد دسمــة أخــر وزيــوت مشتقــة من اللبــن</span> . تشمل هذه المجموعة الدهون والزيوت المشتقة من اللبن (مثل، دسم اللبن، دسم الزبد، وزيت الزبد). إن زيت الزبد هو المنتج المتحصل عليه بإستخلاص الماء والمكونات غيرالدهنية من الزبد أو القشدة . وتشمل هذه المجموعة أيضاً الزبد المنزوع ماؤه والسمن " Ghee" (وهو نوع من الزبد يصنع عادة من لبن الجاموس والبقر) . كما تشمل أيضاً المنتجات المكونة من خليط من الزبد مع كميات صغيرة من الأعشاب، التوابل، المنكهات، الثوم ..إلخ (بشرط أن تبقى محتفظة بخصائص المنتجات الداخلة في هذا البند ) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">ولا يشمل هذا البند المستحلبات الدهنية المحتوية على دسم غير دسم اللبن أو المحتوية على أقل من %39 وزناً من دسم اللبن (البنود <span class="highlight">15.17</span> أو <span class="highlight">21.06</span> بصفة عامة) .</p>
+      <div style="font-size: 11pt; text-align: right; margin-top: 0.5cm; margin-bottom:1cm;">التعديل الأول فبراير 1996</div>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">04.06</span> <span class="highlight">جبــن (بمــا في ذلــك جبيــن اللبــن المخثــر ) .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.6;"><span class="highlight">0406.10</span> – جبن طازج " غير منضج " (غير مخثر أو غير مخمر ) بما في ذلك جبن مصل اللبن، وجبن اللبن المخثر</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0406.20</span> – أجبان مبشورة أو بشكل مسحوق، من جميع الأنواع</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.6;"><span class="highlight">0406.30</span> – أجبان معالجة بالحرارة ، غير مبشورة ولا بشكل مسحوق</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0406.40</span> – أجبان ذات عروق زرقاء</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0406.90</span> – أجبان أخر</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل البند كل أنواع الجبن :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">1 – الجبن الطازج ( بما فيه الجبن المصنوع من مصل اللبن أو زبد اللبن) وجبن مخثر ، الجبن الطازج هو جبن غير ناضجة أو غير مخمرة معدة <span class="highlight">للإستهلاك</span> بعد إنتاجها مباشرة (مثل جبن الريكوته، البروكوسيو ، الجبن القريش "كوتاج " ، الدوبل كريم ، والموزاريلا) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">2 – الجبن المبشور أو المسحوق .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">3 – الجبن المعالج بالحرارة ، ويعرف أيضاً بالجبن المطبوخ. وتتم صناعته بالتقطيع والسحق والخلط والإستحلاب والإذابة بالحرارة وبالعوامل المستحلبة أو المحمضة (بما فيها أملاح الإذابة ) لنوع أو أكثر من الجبن ولوحده أو أكثر من المنتجات التالية : القشدة أو منتجات الألبان الأخر ، الملح ، التوابل ، المنكهات ، الملونات والماء.</p>
+    </div>
+    <div class="page-number-style">55</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">4 – أجبان ذات عروق زرقاء وتعرف أيضاً بالأجبان الزرقاء (مثل ، روكفورت ، جورجونزولا ) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">5 – جبن طرية (مثل كامومبير ، برى ) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">6 – أجبان جامدة وأجبان نصف جامدة (مثل، الشيدر، الجودا، الجرويير، والبارميسان ) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;">ويتم الحصول على جبن مصل اللبن بتركيز المصل وإضافة اللبن أو دسم اللبن، وتبند في هذا البند فقط إذا توافرت فيها الصفات الثلاث التالية :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – أن تكون محتواها من دسم اللبن %5 أو أكثر وزناً ، محسوباً على أساس المادة الجافة ؛</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – أن تكون محتواها من المادة الجافة %70 وزناً على الأقل وألا تزيد عن %85 ؛</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">ج – أن تكون مقولبة أو قابلة للقولبة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">إن وجود اللحم ، الأسماك ، القشريات ، الأعشاب ، التوابل ، <span class="highlight">الخضــروات ، الفاكهــة ، الأثمــار القشريــة</span> ، الفيتامينات، مسحوق اللبن المقشود..إلخ، في الأجبان لايؤثر على التبنيد، بشرط أن تحتفظ تلك الأصناف بصفتها كأجبان.</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;">إن الجبن الذى تم تغطيته بعجين اللبن والبيض (<span class="highlight">المأبونيز</span>) أو بمكعبات صغيرة جداً من الخبز يظل خاضعاً لهذا البند وإن كان قد تمت عليه عملية طبخ مسبقة، بشرط أن تظل تلك الأصناف محتفظة بخصائص الجبن .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">04.07</span> <span class="highlight">بيــض طيــور بقشــره ، طــازج أو محفــوظ أو مطبــوخ .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل <span class="highlight">هــذا البنــد</span> بيض الدواجن أو الطيور الأخر ، بقشره طازجاً (بما فيه بيض التفريخ) أو محفوظاً أو مطبوخاً .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 9.5pt; text-align: right; line-height:1.3;"><span class="highlight">04.08</span> <span class="highlight">بيــض طيــور، بــدون قشــرة ، ومــح (صفــار ) البيــض ، طــازج أو مجفــف أو مسلوقاً في المــاء أو مطبــوخ بالبخــار، أو مقولــب، أو مجمــد أو محفــوظ بأيــة طريقــة أخــرى، وإن كان محتــوياً على سكــر مضــاف أو مــواد تحليــة أخــرى .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– صفار بيض (مح) :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0408.11</span> – – مجفف</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0408.19</span> – – غيره :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– غيره :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0408.91</span> – – مجفف</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0408.99</span> – – غيره</p>
+    </div>
+    <div class="page-number-style">56</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند البيض الكامل بدون قشر، ومح (صفار) البيض لكل الطيور . وقد تكون أصناف هذا البند طازجة أو مجففة أو مطهية بالبخار أو بواسطة الغلى في الماء، مقولبة (بشكل إسطوانات ، مثلاً) ، مجمدة أو محفوظة بطرق أخر . كل هذه تدخل في هذا البند وإن كانت تحتوى على سكر مضاف أو مواد تحلية أخر سواء كانت مستخدمة كغذاء أو لأغراض صناعية (في الدباغة ، مثلاً) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ولا يشمل البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – زيت مح ( صفار ) البيض (البند <span class="highlight">15.06</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – محضرات البيض المحتوية على توابل أو بهارات أو إضافات أخر (البند <span class="highlight">21.06</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ج – ليسثين (البند <span class="highlight">29.23</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">د – بياض البيض الوارد على حده . (زلال البيض " ألبومين " البند <span class="highlight">35.02</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">04.09</span> <span class="highlight">عســل طبيعــى .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند العسل الذى ينتجه نحل (ليس مليفيرا) أو الحشرات الأخر، مصفى أو بشمعه أو محتوياً على قطع من الشمع ، بشرط ، عدم إضافة السكر أو أية مواد أخر إليه . ويمكن تمييز مثل هذا العسل حسب مصادر الغذاء من الأزهار أو المنشأ أو اللون .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">ويستثنى من هذا البند العسل الإصطناعى ومخاليط العسل الطبيعي بالعسل الإصطناعى (البند <span class="highlight">17.02</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 11pt; text-align: right; line-height:1.5;"><span class="highlight">04.10</span> <span class="highlight">منتجـات صالحـة للأكـل من أصـل حيـوانى، غير مذكـورة ولا داخلـة في مكـان أخـر .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;">يشمل هذا البند المنتجات ذات الأصل الحيوانى الصالحة للإستهلاك البشرى ، غير مذكورة ولا داخلة في مكان أخر من جدول التعريفة . <span class="highlight">وهى</span> تشمل :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">1 – بيض <span class="highlight">الســلاحف . وهــو</span> البيض <span class="highlight">الذى تضعــه</span> السلاحف النهرية والسلاحف البحرية ؛ وقد يكون طازجاً أو مجففاً أو محفوظاً بطريقة أخرى . يستثنى زيت بيض السلحفاء (البند <span class="highlight">15.06</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">2 – <span class="highlight">أعشــاش الســالانجان</span> (أعشاش طير الخطاف) وتتكون من مادة تفرزها هذه الطيور التي تتجمد بسرعة حين تعرضها للهواء . قد ترد الأعشاش بحالتها الطبيعية ، أو قد تنظف بإزالة الريش والزغب والتراب وغيرها من الشوائب <span class="highlight">لجعــلها</span> صالحة <span class="highlight">للإستهلاك</span> . وتكون <span class="highlight">عــادة</span> على شكل أشرطة أو خيوط ضاربة للبياض .</p>
+    </div>
+    <div class="page-number-style">57</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">تحتوى أعشاش السالانجان على نسبة عالية من البروتين وتستعمل بصورة شبه حصرية في صناعة الحساء أو غيرها من محضرات الأغذية .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يستثنى من البند الدم الحيوانى ، الصالح للأكل أم لا ، سائلاً أو مجففاً (البند <span class="highlight">05.11</span> أو البند <span class="highlight">30.02</span>) .</p>
+
+      <div style="text-align: right; margin-top: 10cm; font-size: 14pt;">(</div>
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+    </div>
+    <div class="page-number-style">58</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">الفصل الخامس</h2>
+    <p class="section-title-style" style="font-size: 12pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      <span class="highlight">منتجـات أخـر من أصـل حيـوانى ، غيـر مذكـورة ولا داخلـة في مكـان أخـر</span>
+    </p>
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">ملاحظات الفصل :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">1 – لايشمل هذا الفصل :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">أ – المنتجات الصالحة للأكل ( <span class="highlight">عدا</span> دم الحيوانات السائل أو المجفف والمصارين والمثانات والمعد، كاملة أو قطعاً)؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.8;">ب – الصلال أو الجلود (بما فيها الجلود بفراء) <span class="highlight">عــدا</span> المنتجات الداخلة في البند <span class="highlight">05.05</span> والقصاصات <span class="highlight">والنفايــات المماثلة من الجلــود</span> الخام الداخلة في البند <span class="highlight">05.11</span> (الفصل 41 أو الفصل 43) ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">ج – المواد النسجية من أصل حيوانى ، عدا شعر الخيل وفضلاته ( القسم الحادى عشر ) ؛ أو</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">د – الحزم والغصن المحضرة لصناعة المكانس والفراجين (البند <span class="highlight">96.03</span>) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">2 – يعتبر " خاماً " بالمعنى المقصود في البند (<span class="highlight">05.01</span>)، الشعر المفرور طويلياً (بشرط ألا تكون أطرافه الجذرية ورؤوسه مجمعة معاً في الإتجاه الطبيعي) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em; line-height:1.8;">3 – يعتبر " عاجاً " في هذا الجدول، أنياب الفيل، القط، الكركدن البحرى، وأنياب الخنزير البرى وقرون وحيد القرن وكذلك أسنان جميع الحيوانات .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm; margin-right:1em;">4 – يعتبر (شعر خيل) في هذا الجدول شعر عرف وذيل <span class="highlight">فصيلتى</span> الخيل والبقر .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;"><span class="highlight">إعتبــارات عــامـــة</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا الفصل مواد متنوعة من أصل حيوانى، بشكلها الخام أو التي أخضعت لعمليات تحضير بسيطة، <span class="highlight">التى</span> لاتستعمل عادة كغذاء (بإستثناء بعض أنواع الدم والمصارين والمثانات ومعد الحيوانات) غير المشمولة في الفصول الأخر من جدول التعريفة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يستثنى من هذا الفصل ما يلى :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – الشحوم الحيوانية (الفصل 2 أو 15) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ب – جلود حيوانات الصالحة للأكل غير مطبوخة (الفصل الثانى) أو من الأسماك (الفصل الثالث) . (تخضع مثل هذه الجلود عندما تكون مطبوخة للفصل 16) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ج – الغدد <span class="highlight">وغيرهــا</span> من الأعضاء المعدة للعلاج العضوى ، مجففة وإن كانت مسحوقة (الفصل 30) .</p>
+    </div>
+    <div class="page-number-style">59</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">د – الأسمدة الحيوانية الأصل (الفصل 31) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">هـ – <span class="highlight">الصــلال</span> الخام والجلود بإستثناء جلود الطيور وأجزاؤها ، بريشها أو بزغبها ، الخام أو المنظفة أو المعقمة أو المعالجة بقصد الحفظ، لكن غير مشغولة بطرق أخر ( الفصل 41 ) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">و – جلود <span class="highlight">الفــراء</span> (الفصل 43) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ز – <span class="highlight">الحريــر</span> والصوف والشعر وغيرها من المواد النسجية الخام من أصل حيوانى (القسم الحادى <span class="highlight">عشــر) عــدا</span> شعر الخيل وفضلاته الذى يبقى داخلاً في هذا الفصل .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">ح – اللؤلؤ الطبيعى أو المستنبت (الفصل 71) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 11.5pt; text-align: right; line-height:1.5;"><span class="highlight">05.01</span> <span class="highlight">شعــر بشــرى ، خــام ، وإن كــان مغســولاً أو منــزوعاً دهنــه ؛ فضــلات الشعــر البشــرى .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند الشعر البشرى الخام، وإن كان مغسولاً أو منزوع الدهن، بما في ذلك الشعر <span class="highlight">المجمــع</span> بالتوازى ، ولكن ليس لدرجة ترتيب أطراف الجذور والرؤوس معاً في الإتجاه الطبيعي، كما يشمل فضلات الشعر البشرى . يستثنى من هذا البند الشعر البشرى (عدا فضلاته) المحضر تحضيراً يتجاوز الغسل البسيط أو نزع الدهن، مثل ، المنعم أو المصبوغ أو المقصور أو المجعد أو المحضر لصنع الشعر المستعار ..إلخ ، وكذلك الشعر البشرى المهرب بحيث تكون أطراف الجذور والرؤوس معاً في الإتجاه الطبيعي (البند <span class="highlight">67.03</span> ، أنظر شرح هذا البند) . لا يطبق هذا الإستثناء على فضلات الشعر البشرى، <span class="highlight">التى</span> تبقى دائماً داخلة في هذا البند ، حتى وإن كانت ناتجة ، مثلاً ، عن الشعر المقصور أو المصبوغ .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ويستثنى من هذا البند أيضاً :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – أقمشة التصفية المصنوعة من الشعر البشرى (البند <span class="highlight">59.11</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – شباك الشعر المصنوعة من الشعر البشرى (البند <span class="highlight">65.05</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">ج – الأصناف الأخر المصنوعة من الشعر البشرى (البند <span class="highlight">67.04</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10.5pt; text-align: right; line-height:1.4;"><span class="highlight">05.02</span> <span class="highlight">شعــر ووبــر الخنزيــر أو الخنزيــر البــرى ؛ شعــر الغريــر وغيــره من شعــر لصناعــة الفراجيــن (الفــرش) ؛ فضــلاتهــا .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0502.10</span> – شعر ووبر الخنزير أو الخنزير البرى ، وفضلاته</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0502.90</span> – غيره</p>
+    </div>
+    <div class="page-number-style">60</div>
+  </div>
+
+</body>
+</html>

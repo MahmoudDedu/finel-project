@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكتاب - الغلاف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2; /* Tailwind: bg-gray-100 */
+      direction: rtl;
+      font-family: 'Amiri', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm; /* Use min-height for pages with varying content length */
+      background: white; /* Tailwind: bg-white */
+      margin: 2rem auto; /* Tailwind: my-8 mx-auto */
+      padding: 2.5cm 2cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Tailwind: shadow-lg */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    /* General text styles from example, can be overridden by more specific ones */
+    .chapter-title-style { /* Renamed to avoid conflict if used differently than example */
+      font-size: 22pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .section-title-style { /* Renamed */
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+    }
+    .content-style p, .content-style div, .content-style li { /* Applied to paragraphs/divs within content */
+      font-size: 14pt;
+      line-height: 2;
+      text-align: justify;
+    }
+    .content-style p { /* Indent only paragraphs directly under content, not in lists etc. unless specified */
+        text-indent: 1cm;
+    }
+    .page-number-style {
+      position: absolute;
+      bottom: 2cm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12pt;
+    }
+    strong {
+      font-weight: bold;
+    }
+
+    /* Custom styles for the cover page elements */
+    .cover-top-header {
+      font-size: 14pt;
+      text-align: center;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-main-title {
+      font-size: 40pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+      margin-top: 1cm; /* Adjusted */
+      letter-spacing: 2px; /* Optional: for stretched look */
+    }
+    .cover-subtitle {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2cm;
+    }
+    .cover-volume-title {
+      font-size: 28pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .cover-description {
+      font-size: 16pt;
+      text-align: center;
+      margin-bottom: 2.5cm; /* Adjusted */
+    }
+    .cover-translation-note {
+      font-size: 12pt;
+      text-align: center;
+      margin-top: auto; /* Pushes to bottom if flex container */
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-authority-section {
+      font-size: 12pt;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-final-note {
+      font-size: 11pt; /* Slightly larger than 10pt for readability */
+      text-align: justify;
+      margin-top: 1cm; /* Spacing from elements above */
+      /* margin-bottom: 2cm; /* Ensure it's above page bottom if no page number */
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">قد تكون هذه المواد فرطاً (صباً ) أو في حزم غير محكمة الربط أو في حزم محكمة الربط بحيث يكون الوبر أو الشعر مجمعاً بالتوازى وأطراف الجذور على مستوى واحد تقريباً. وقد تكون هذه المواد خاماً أو منظفة أو <span class="highlight">مبيضة</span> أو مصبوغة أو معقمة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">من أنواع الشعر الأخر المستعملة في صناعة الفراجين والتي تدخل في هذا البند ، شعر الطربان والسنجاب والسمور .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;">غير أنه، يستثنى من هذا البند الشعر والأوبار عندما تكون بشكل حزم أو خصل محضرة (رؤوس فراجين أو مكانس محضره) (البند <span class="highlight">96.03</span>) ، أى ، مهيأة بشكل حزم غير مركبة جاهزة للإستعمال دون تجزئة في صنع المكانس والفراجين، أو تلك التي لاتتطلب سوى عمليات شغل بسيطة (كتشذيب رؤوسها أو قصها في مستوى واحد) لكى تصبح جاهزة لمثل هذا الإستعمال ؛ ( أنظر الملاحظة 3 للفصل 96) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 11pt; text-align: right; line-height:1.5;"><span class="highlight">05.03</span> <span class="highlight">شعــر خيــل وفضــلاتــه، وإن كــان بشكــل طبقــات على حامــل أو بدونــه .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند شعر عرف وذيل الحيوانات من فصيلتي الخيل والبقر ، وهو لايشمل شعر الخيل الخام فقط بل يشمل أيضاً الشعر المغسول أو المنزوع دهنه أو المصبوغ أو المجعد أو المحضر بطريقة أخرى . قد تكون هذه الأصناف فرطاً أو حزماً أو مهيأة بشكل خصل <span class="highlight">مبرومه</span> . يشمل هذا البند أيضاً شعر الخيل بشكل طبقة على حامل من النسيج أو الورق ..إلخ ، أو مثبتة بين طبقتين من النسيج أو الورق ..إلخ ، بالتدبيس أو بالخياطة البسيطة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">ويستثنى <span class="highlight">مــن هــذا</span> البند شعر الخيل <span class="highlight">الذى</span> أخضع لعملية غزل وشعر الخيل الموصول بعد أطرافه من طرف الى طرف (الفصل 51)</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10pt; text-align: right; line-height:1.4;"><span class="highlight">05.04</span> <span class="highlight">مصــارين ومثانــات ومعــد حيوانــات (عــدا الأسمــاك)، كاملــة أو قطعــاً، طازجــة، أو مبــردة أو مجمــدة أو مملحــة أو في مــاء مملــح، أو مجففــة أو مدخنــة .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند مصارين ومثانات ومعد حيوانات (عدا تلك الخاصة بالأسماك ، <span class="highlight">والتى</span> تدخل في <span class="highlight">البنــد</span> <span class="highlight">05.11</span>) ، سواء كاملة أو قطعاً ، وإن كانت صالحة للأكل، طازجة، مبردة ، مجمدة ، أو مملحة أو في ماء مملح ، مجففة أو مدخنة . إما إذا كانت محضرة أو محفوظة بطرق أخر، فإنها تستثنى من هذا البند (الفصل 16 بصفة عامة) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">1 – أكياس الأنفحة (العجول والجديان ..إلخ)، وإن كانت مقطعة أو مجففة ؛ والتي تستخرج منها الأنفحة (منفحة).</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">2 – الكروش (عندما تطهى تدخل في الفصل 16) .</p>
+    </div>
+    <div class="page-number-style">61</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">3 – الغشاء الخارجى غير المشغول لأمعاء الثور أو الضأن .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;"><span class="highlight">ويشمــل البنــد أيضــاً</span> المصارين والغشاء الخارجي للأمعاء (للثور على وجه الخصوص) والتي شقت أو قطعت بالطول الى شرائط ، سواء أزيلت الأغشية الداخلية بالكشط أو لم تزل .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">تستعمل المصارين بصورة رئيسية لتغليف السجق. وتستعمل أيضاً لصنع الخيوط المعقمة المستعملة في الجراحة (البند <span class="highlight">30.06</span>) ، أوتار المضارب الرياضية (البند <span class="highlight">42.06</span>) أو أوتار الآلات الموسيقية (البند <span class="highlight">92.09</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;"><span class="highlight">يستثنــى أيضــاً مــن هــذا البنــد</span> " المصارين الإصطناعية " المصنوعة بالبثق من عجينة ألياف الصلال أو الجلود، الغشاء بعد ذلك بمحلول الفورمالدهيد والفينولات (البند <span class="highlight">39.17</span>) "والمصارين الإصطناعية " المصنوعة بلصق المصارين الطبيعية المشقوقة بعضها الى بعض (البند <span class="highlight">42.06</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 9.5pt; text-align: right; line-height:1.3;"><span class="highlight">05.05</span> <span class="highlight">جلـود طيـور وأجـزاء أخـر من طيـور ، بريشـها أو زغبهـا ، ريـش طيـور وأجـزاؤه ( وإن كان مشـذباً ) ، زغــب ، حميهــا خــام أو لــم يجــر عليهــا أكثــر من التنظيــف ، أو التطهيــر أو المعالجــة بقصــد حفظهــا ؛ مســاحيق ونفايــات ريــش أو أجــزاء ريــش (+) .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0505.10</span> – ريش من الأنواع المستخدمة في الحشو ؛ زغب</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0505.90</span> – <span class="highlight">غيــره</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">1 – جلود طيور وأجزاء أخر من الطيور (مثل ، الرؤوس و الأجنحة) بريشها أو بزغبها ، و</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm; line-height:1.8;">2 – <span class="highlight">ريـش وأجــزاء ريـش</span> (سواء كان مشذباً أم لا)، والزغب، بشرط أن تكون إما غير مشغولة أو منظفة فقط أو مطهرة أو معالجة بقصد حفظها، ولكن غير مشغولة بأية طريقة أخرى أو غير مركبة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند أيضاً مساحيق ونفايات الريش أو أجزاء الريش .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">إن أصناف هذا البند من النوع المعد للإستخدام كحشو للأفرشة، لأغراض تزيينية (عادة بعد تحضير إضافي) أو لأغراض أخر . ولأغراض التبنيد، فإنه ليس هناك تمييز بين أنواع الريش المختلفة . تشمل أجزاء الريش الداخلة في هذا البند الريش المشطور طولياً والريش المفصول عن قصبته (وإن كان مقلم الحواف) أو المتصل بقشارة رقيقة من القصبة ، أنابيب الريش وقصباته .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">إن الريش والزغب يبقى داخلاً في هذا البند ، وإن كان قد جرت تعبئته ، لأغراض تسهيل بيعه بالتجزئة ، في أكياس من القماش العادى ، والتي لا يمكن إعتبارها وسائد أو وسيدات. كما يبقى داخلاً في هذا البند الريش المنظوم بخيط تسهيلاً لنقله .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;">يستثنى من هذا البند جلود الطيور والأجزاء الأخر من الطيور والريش وأجزاؤه التي أخضعت لعمليات شغل غير تلك المنصوص عليها في هذا البند (مثل التبييض أو الصباغة أو التجعيد أو التمويج ) ، أو المثبتة أو المركبة ،</p>
+    </div>
+    <div class="page-number-style">62</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">حامل، وكذلك الأصناف المصنوعة من الريش ..إلخ ؛ فهى عموماً تدخل في البند <span class="highlight">67.01</span> (أنظر شروح الفصل 67) ومع ذلك ، فإن أنابيب قصب الريش المشغولة والأصناف المصنوعة من قصب الريش تبند طبقاً لصفتها (مثل ، عوامات صيد الأسماك البند <span class="highlight">95.07</span> ، عيدان الأسنان البند <span class="highlight">96.01</span>) .</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.2cm; text-align: right;">ملاحظة البند الفرعي :</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البند الفرعي <span class="highlight">0505.10</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;">يقصد "بالريش من النوع المستعمل للحشو " <span class="highlight">ريــش الطيــور</span> الداجنة (خاصة الأوز أو البط) أو الحمام أو الحجال أو مايماثلها ، عدا الريش الكبير من الأجنحة أو الذيل أو الريش الكبير الذى يستبعد عند الفرز . " الزغب " هو أدق وأنعم جزء في ريش الأوز أو البط على وجه الخصوص ويختلف عن الريش في أنه ليس له قصبات صلبة ، ويستعمل مثل هذا الريش والزغب بصفة رئيسية لحشو فرش الأسرة أو الأصناف الأخر كالوسائد والألبسة العازلة (مثل، السترات المعروفة بـ " أنوراك " .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 9pt; text-align: right; line-height:1.3;"><span class="highlight">05.06</span> <span class="highlight">عظـام وأبـواق قـرون، خـام أو منـزوعة الدهـن أو الهـلام أو محضـرة تحضيـراً بسيطـاً (ولكـن غير مقطعـة بأشكـال خاصـة ) ، أو معالجـة بحمـض ؛ مسـاحيق ونفايـات هـذه المنتجـات .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0506.10</span> – عظامين (بروتين عظام) وعظام معالجة بحمض</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0506.90</span> – <span class="highlight">غيــره</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">إن منتجات هذا البند تستعمل بصفة رئيسية كمواد للنحت أو لصنع الغراء والهلام (جيلاتين) أو كأسمدة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ويشمل هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">1 – العظام وأبواق القرون (عظام القرون الداخلية)، خاماً كانت أو منزوعة الدهن (<span class="highlight">وهى</span> العظام المنزوع دهنها بطرق مختلفة) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">2 – العظام المحضرة تحضيراً بسيطاً (ولكن غير مقطعة بأشكال خاصة) أى ، <span class="highlight">التى</span> لايتجاوز تحضيرها النشر البسيط لإزالة الأجزاء الزائدة منها، أو التقطيع (بالعرض أو بالطول) ثم تسويتها تسوية بسيطة أو تبييضها في بعض الأحيان. لذلك يستثنى من هذا البند الألواح المستطيلة بما فيها الألواح المربعة والصفائح والأشكال الأخر ، وإن كانت مصقولة أو مشغولة بطريقة أخرى وكذلك المنتجات المتحصل عليها بواسطة قولبة العظام المسحوقة؛ كل هذه الأصناف تدخل في البند <span class="highlight">96.01</span> أو في بنود أخر أكثر تخصيصاً.</p>
+    </div>
+    <div class="page-number-style">63</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">3 – العظام المعالجة بحمض ، أى ، العظام التي أذيب جزءها الخاص بواسطة حمض الهيدروكلوريك، وإلا لما تحتفظ دون أن تفقد شكلها الأصلى بأنسجتها الخلوية وأجزاؤها الغضروفية (العظمين) فقط <span class="highlight">التى</span> يمكن تحويلها الى هلام (جيلاتين) بسهولة .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">4 – العظام المنزوعة الهلام، <span class="highlight">وهى التى</span> إنتزعت منها مادتها العضوية (الجيلاتين) بواسطة البخار وتكون عادة بشكل مسحوق وتعرف بإسم (مسحوق العظم البخارى) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">5 – مساحيق ونفايات العظام (بما فيها العظام المجروشة )، مثل تلك التي تنتج عن شغل العظم .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 9pt; text-align: right; line-height:1.3;"><span class="highlight">05.07</span> <span class="highlight">عــاج ، عظــم ظهــر السلحفــاة (نيــل أو درق) ، صفيحــات فــك الحــوت (بمــا فيهــا الأهــداب) أو غيرهــا من ثدييــات بحريــة ، قــرون، وقــرون مشعبــة، حوافــر، أظافــر، مخالــب ومناقيــر ، خــام أو محضــرة تحضيــراً بسيطــاً وإنمــا غير مقطعــة بأشكــال خاصــة ؛ مســاحيق ونفايات هــذه المــواد .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0507.10</span> – عاج ، مساحيقه ونفاياته</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0507.90</span> – <span class="highlight">غيــره</span></p>
+      <div style="font-size: 11pt; text-align: right; margin-top: 0.2cm; margin-bottom:0.3cm;">التعديل السادس 1998</div>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند المنتجات المبينة أدناه ، خاماً أو محضرة تحضيراً بسيطاً ولكن غير مقطعة بأشكال خاصة ، أى ، <span class="highlight">التى</span> لم تتعد عمليات تحضيرها البرد أو الكشط أو التنظيف أو إزالة الأجزاء الزائدة أو التشذيب أو النشر أو التقطيع عدا التقطيع الى أشكال خاصة أو التسوية البسيطة أو التقويم البسيط أو البسط.</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – <span class="highlight">العــاج</span> : يقصد بعبارة " عاج " أينما وردت في جدول التعريفة ، المادة العظمية <span class="highlight">التى</span> تؤلف :</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.05cm;">1 – أنياب الفيل ، فرس النهر ، الفظ ، الكركدن أو الخنزير البرى .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.05cm;">2 – قرون وحيد القرن (الخرتيت) .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.05cm;">3 – عظم ظهر السلحفاة من الحيوانات البرية أو البحرية .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ب – <span class="highlight">عظــم ظهــر السلحفــاة</span> (درق أو نيل) . إن ذيل السلحفاة المعروف تجارياً هو عادة ذيل السلحفاة البحرية (بصورة عامة ، يتحصل عليها من الأنواع المعروفة بسلحفاة " كعب " و " لوجرهيد " و " هوكسيل ") . إن الإشارة الى ذيل السلحفاة يشمل أيضاً ذيل السلحفاة البرية . وذيل السلحفاة هو ماده قرنية على شكل درقات ، مختلفة الحجم والسمك وتحمى الهيكل القرنى المحيط بجسم الحيوان .</p>
+    </div>
+    <div class="page-number-style">64</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;"> يقصد بـ " ذيل السلحفاة " في هذا البند</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">1 – الذيل كاملاً أو أجزاء .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm; line-height:1.8;">2 – <span class="highlight">درقــات</span> الذيل وهي تفصل غالباً في مواقع الصيد، وتتكون من ألواح غير منتظمة السمك ، ذات سطح محدب ، <span class="highlight">وهــذه</span> الدرقات إما " ظهرية " أو " بطنية " بحسب جزء الجسم المأخوذة منه؛ ويعرف الجزء الذى يغطى بطن أو صدر السلحفاه باسم الدرع الصدرى للسلحفاه (صدره السلحفاة) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ج – <span class="highlight">صفيحــات فــك الحــوت وشعــر الصفيحــات</span> وتكون بحالتها الطبيعية (من الحيتان أو الثدييات البحرية الأخر) على شكل نصال قرنية مقوسة مكسوة بطبقة جلدية ضاربة الى الرمادى وملتحمة بالسطح وتحمل على وجهها الداخلى نوعاً من الهدب من نفس مادة الصفيحات (شعر الصفيحات) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm; line-height:1.8;">د – <span class="highlight">قــرون وقــرون متشعبــة وحوافــر وأظافــر ومخالــب ومناقيــر طيــور</span> . إن القرون من هذه المجموعة يمكن أن ترد مع لزومها أو مع عظام الجبهة أو بدونها . والقرون المشعبة هى قرون الغزلان والوعول ..إلخ .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند أيضاً مساحيق ونفايات هذه المنتجات (بما فيها القصاصات) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;"><span class="highlight">يستثنــى مــن هــذا البنــد</span> المنتجات التي تقطع الى أشكال مستطيلة (بما فيها المربعة الشكل) أو الى قضبان أو أنابيب أو أشكال أخر شبه جاهزة ، وكذلك المنتجات المتحصل عليها بالتولبة (البند <span class="highlight">96.01</span> أو بنود أخر أكثر تخصيصاً) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 9pt; text-align: right; line-height:1.3;"><span class="highlight">05.08</span> <span class="highlight">مرجــان ومــواد مماثلــة، خامــاً أو محضــرة تحضيــراً بسيطــاً ولكــن غير مشغولــة بطريقــة أخــرى ؛ أصــداف رخويــات أو قشريــات أو قنفــذيات بحريــة وعظــام حبــار ، خامــاً أو محضــرة تحضيــراً بسيطــاً وإنمــا غير مقطعــة بأشكــال خاصــة ، مســاحيقها وفضــلاتها .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;">المرجان هو الهيكل الكلسى للحيوانات البحرية المتحدة الأرجل ويستعمل عادة في صنع الحلى . إن أهم أنواع الصدف المستعمل للأغراض الصناعية هو صدف اللؤلؤ .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">1 – المرجان ، الخام أو المزالة قشرته الخارجية فقط .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">2 – " المرجان " المحضر تحضيراً بسيطاً ولكن غير مشغول بطريقة أخرى ، أى ، المرجان الذى لم يجر عليه من العمليات سوى التقطيع البسيط .</p>
+    </div>
+    <div class="page-number-style">65</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm; line-height:1.8;">3 – الأصداف، الخام أو المحضرة تحضيراً بسيطاً ولكن غير مقطعة بأشكال خاصة، أي ، الأصداف التي لم تتعدى عمليات تحضيرها التنظيف أو التقطيع البسيط .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">ويشمل هذا البند أيضاً عظام الحبار، ومجروش ومساحيق الصدف المستعملة كغذاء للحيوانات وكذلك نفايات الصدف.</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;">ويستثنى من هذا البند القضبان والصفائح المستطيلة (بما فيها المربعة) والأشكال <span class="highlight">الأخــر</span> ، ســواءً كانت أو لم تكن مصقولة أو مشغولة بطريقة أخرى؛ وهذه تدخل في البند (<span class="highlight">96.01</span>) أو في بنود أخر أكثر تخصيصاً .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">05.09</span> <span class="highlight">أسفــنج طبيعــى من أصــل حيــوانى .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يطبق هذا البند على كل من الأسفنج الخام (بما في ذلك المغسول والمنظف تنظيفاً بسيطاً)، والأسفنج المحضر (مثل ، المنزوع منه مادته الكلسية أو المبيض)، كما يشمل أيضاً نفايات الأسفنج .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">إن اللوف ، المعروف أيضاً بالأسفنج النباتي ، يدخل في البند (<span class="highlight">14.04</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 9.5pt; text-align: right; line-height:1.3;"><span class="highlight">05.10</span> <span class="highlight">عنبــر أشهــب، طيــب القنــدس (كاستوريــوم)، زبــاد ومســك؛ ذراريــح (ذبــاب هنــدى)؛ صفــراء وإن كانــت مجففــة ؛ غــدد ومنتجــات حيوانيــة أخــر مستعمــلة في إعــداد محضــرات الصيدلــة ، طازجــة ، مبــردة ، مجمــدة أو محفوظــة مؤقتــاً بطريقــة أخــرى .</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;"><span class="font-bold">العنبر الأشهب :</span> عبارة عن مادة يفرزها حوت العنبر وتوجد بشكل كتل دائرية مؤلفة من عدة طبقات متحدة المركز ويصل وزنها الى مائة كيلو جرام ، <span class="highlight">وهى</span> ذات قوام شمعى تنبعث منها رائحة زكية عند دعكها ، ويتراوح لونها بين الأشهب الرمادي الداكن ، أما ثقلها النوعي فأقل من الثقل النوعي للماء. ويجب التفريق بين العنبر الأشهب والعنبر الأصفر الذي يعد مادة راتنجية معدنية تتبع البند (<span class="highlight">25.30</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;"><span class="font-bold">طيب القندس :</span> وهذه المادة تفرزها حيوانات القندس (سمور) <span class="highlight">وهى</span> مادة راتنجية لونها بني أو محمر أو مصفر ذات نكهه لازعة ورائحة قوية وترد غالباً في ذات الأجربة التي تتكون بداخلها ، هذه الأجربة في العادة معقودة عند نهايتها وذات ثنايا يتراوح طولها من 5 الى 10 سم .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;"><span class="font-bold"><span class="highlight">زبــاد :</span></span> نوع من الطيب ينتجه قط الزباد (سنور) ، وهو عبارة عن مادة راتنجية لونها بين البني الذهبي أو البنى العادى وقوامها عجيني مشبع بالزيت ، وذات <span class="highlight">رائحه</span> قوية تقارب الى حد بعيد ، رائحة المسك الطبيعي .</p>
+    </div>
+    <div class="page-number-style">66</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;"><span class="font-bold">المسك :</span> ويفرزه نوع من الغزلان ، عادة بداخل الجراب التي يتكون فيها (<span class="highlight">وهى</span> مسطحة وخالية من الشعر من أحد جوانبها، ومحدبة ومغطاه بشعر أبيض من الجانب الآخر ) . ولهذه المادة المفرزة لون بني داكن ورائحته قوية. ويجب التفرقة بين المسك الطبيعي والمسك الإصطناعي (مسك إكسيلين ومسك أميريت ..إلخ) الذي يتبع الفصل 29 .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;"><span class="font-bold">الذراريح :</span> هي نوع من الحشرات ( خنافس) تستعمل لخواصها المعالجة للبثور أو المضادة للتهيج وترد عادة مجففة أو بشكل مسحوق .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ويشمل هذا البند أيضاً :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">1 – الغدد والأعضاء الحيوانية الأخر المستعملة في تحضير المنتجات العضوية الطبية<span class="highlight">0</span> والتي لاتصلح للإستهلاك البشرى نظراً لطبيعتها الخاصة أو لطريقة إعدادها (كالبنكرياس والخصى والمبايض والمرارات والغدد الدرقية والنخامية<span class="highlight">00</span>إلخ) سواء كانت طازجة أو مبردة أو مجمدة أو محفوظة حفظاً مؤقتاً بطريقة أخرى. (في الجلسرين أو الأسيتون أو الكحول مثلاً)، بقصد نقلها أو تخزينها قبل الإستعمال النهائي . فإن كانت هذه المنتجات مجففة أو بشكل خلاصة فإنها تدخل في البند (<span class="highlight">30.01</span>) (أنظر الملاحظة 1 (أ) من هذا الفصل في جدول التعريفة فيما يختص بالمنتجات الصالحة للأكل) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">2 – الصفراء وإن كانت مجففة (تدخل خلاصة الصفراء في البند <span class="highlight">30.01</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يستثنى من هذا البند أيضاً سم الأفعى أو النحل المجفف بشكل رقائق والمعبأ في أمبولات مختومة ، (البند <span class="highlight">30.01</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10pt; text-align: right; line-height:1.4;"><span class="highlight">05.11</span> <span class="highlight">منتجــات حيوانيــة الأصــل غير مذكــورة ولاداخلــة في مكــان آخــر ؛ حيوانــات ميتــة ممــا يشملــه الفصــلان (1) أو (3) ، غير صالحــة للإستهــلاك البشــرى .</span></p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0511.10</span> – منى ذكور الأبقار</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– غيرها :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.6;"><span class="highlight">0511.91</span> – – منتجات أسماك أو قشريات أو رخويات أو لا فقريات مائية أخر ، حيوانات ميتة مما يشمله الفصل (3)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0511.99</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">1 – الحيوانات المنوية الحيوانية .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">2 – أجنة الحيوانات ، التي يتم شحنها مجمدة بقصد زراعتها في أمهات مهيأة لإستقبالها .</p>
+    </div>
+    <div class="page-number-style">67</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">3 – دم <span class="highlight">حيوانى</span> ، سائل أو مجفف ، صالحاً للأكل أو غير صالح . لايشمل هذا البند الدم الحيواني المحضر لإستعمالات علاجية أو وقائية أو تشخيصية (البند <span class="highlight">30.02</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">4 – حشرة القرمز والحشرات المماثلة : القرمز <span class="highlight">هى</span> حشرة تعيش على بعض نباتات الصبير، وهناك ثلاث أنواع من دودة القرمز في سوق التجارة ، الأسود، <span class="highlight">الرمادى</span> أو الفضى، المحمر أو المائل الى الحمرة وتعطى من دودة القرمز <span class="highlight">مــادة ملونــة حمــراء تستخــدم فى</span> تحضير الصبغة الحمراء القانية ( خلاصة دودة القرمز أو الكارمين) (البند <span class="highlight">32.03</span>) ، وكذلك فى تحضير الألوان المرسبة الحمراء (لك قرمزى) (البند <span class="highlight">32.05</span>) . ومن أهم الحشرات التي تشبه حشرة القرمز حيوان القرمز <span class="highlight">الذى</span> يعيش على أشجار البلوط القزمية يستعمل حيوان القرمز في تحضير الأصباغ الحمراء الزاهية والثابتة <span class="highlight">التى</span> تدخل في البند <span class="highlight">32.03</span> . يجب التفريق بين حيوان القرمز والقرمز المعدنى الخاضع للبند <span class="highlight">38.24</span> . وترد ديدان القرمز والحشرات المماثلة مجففة، كاملة أو مسحوقة ..</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">5 – بيض السمك وغدد التذكير غير الصالح للأكل . ويشمل :</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.05cm; line-height:1.8;">أ – البيض الملقح المعد للتفريخ ، يمكن تمييزه بوجود نقطتين سوداويتين على سطحه تمثلان عينى السمكة بعد الفقس .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm; line-height:1.8;">ب – البيض المملح ( مثل بيض سمك القد <span class="highlight">والأسقمرى</span> ) ، المستعمل كطعم لصيد الأسماك ويمكن تمييزه عن أبدال <span class="highlight">الخبيارى</span> ( كافيار ) (البند <span class="highlight">16.04</span>) بواسطة رائحته القوية الكريهة وعن طريق تعبئته إذ يعبأ بكميات كبيرة ..</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ولا يشمل هذا البند بيض السمك وغدد التذكير الصالح للأكل ( الفصل الثالث ) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.05cm; margin-right:1em;">6 – نفايات أسماك أو قشريات، رخويات أو لافقريات مائية أخر . تشمل هذه المجموعة ، فيما تشمل :</p>
+      <p style="text-indent: 1cm; margin-right:2em; margin-bottom: 0.05cm; line-height:1.8;">1 – قشور الأسماك الصغيرة، طازجة أو محفوظة (ليست فى محلول)، وتستعمل لتحضير أساس اللؤلؤ المستخدم في طلاء اللآلئ المقلدة .</p>
+      <p style="text-indent: 1cm; margin-right:2em; margin-bottom: 0.05cm; line-height:1.8;">2 – مثانات الأسماك <span class="highlight">خامــاً</span> أو مجففة أو مملحة المستعملة في صنع الغراء أو الصالحة للإستهلاك <span class="highlight">البشرى</span>.</p>
+      <p style="text-indent: 1cm; margin-right:2em; margin-bottom: 0.05cm;">3 – مصارين الأسماك وفضلات جلودها ، المستعملة في صنع الغراء ..إلخ .</p>
+      <p style="text-indent: 1cm; margin-right:2em; margin-bottom: 0.05cm;">4 – رؤوس الأسماك وفضلات الأسماك الأخر .</p>
+    </div>
+    <div class="page-number-style">68</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يستثنى من هذا البند :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – أكباد الأسماك الصالحة للأكل (الفصل الثالث) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – قشور الرخويات أو القشريات أو القنافذ البحرية (الخاضعة للبند <span class="highlight">05.08</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">ج – أكباد الأسماك الغير صالحة للأكل ، المستخدمة في تحضير منتجات الصيدلة (البند <span class="highlight">05.10</span>).</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">7 – بيض دودة الحرير ( القز ) ، ولها مظهر البذور الصغيرة ذات لون أصفر باهت يتحول تدريجياً الى رمادى أشهب أو أصفر ترابى . ويرد البيض عادة في علب (أو خلايا ) أو في أكياس صغيرة من القماش .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">8 – المازن ( بيض النمل ) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em; line-height:1.8;">9 – الأوتار والأعصاب المستعملة أساساً كمواد أولية <span class="highlight">لصناعــة الغــراء كالنفايــات</span> المذكــورة فى الفقرتين (<span class="highlight">10</span>) و (<span class="highlight">11</span>) أدناه .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">10 – القصاصات والنفايات المماثلة ، من الصلال أو الجلود الخام .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">11 – نفايات جلود الفراء الخام، <span class="highlight">التى</span> من الواضح أنها لاتصلح للإستعمال من قبل صانعي الفراء .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm; margin-right:1em; line-height:1.8;">12 – الحيوانات الميتة من الأنواع المذكورة في الفصلين 1 أو 3 غير الصالحة للإستهلاك البشرى أو المعتبرة كذلك، ولحومها <span class="highlight">وأحشــاؤها وأطــرافها غيــر</span> الصالحة للإستهلاك البشرى ما عدا المنتجات الواردة في البند (<span class="highlight">02.09</span>) أو أحد البنود السابقة لهذا الفصل .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يستثنى من هذا البند أيضاً :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – صمغ اللك وحبوب اللك وعيدان اللك وغيرها من أنواع اللك (البند <span class="highlight">13.01</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – الشحوم الحيوانية الداخلة في الفصل 15 .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm; line-height:1.8;">ج – <span class="highlight">مجموعات الحيوانــات والنمــاذج</span> لمجموعات علم الحيوان ، المؤلفة من الحيوانات المحنطة أو المحفوظة بطريقة أخرى، وكذلك الفراش والحشرات الأخر والبيض ..إلخ (البند <span class="highlight">97.05</span>) .</p>
+    </div>
+    <div class="page-number-style">69</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">القسم الثانى</h2>
+    <p class="section-title-style" style="font-size: 16pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      <span class="highlight">منتجــات المملكــة النباتيــة</span>
+    </p>
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;"><span class="highlight">ملاحظــة القســم :</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height:1.8;">يقصد بعبارة " كريات مكتلة Pellets " أينما وردت في هذا القسم، المنتجات المقدمة بشكل حبات <span class="highlight">إسطوانية</span> أو كروية صغيرة ..إلخ، المكتلة إما مباشرة بالضغط البسيط أو بإضافة مادة رابطة بنسبة لاتزيد عن %3 وزناً .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;"><span class="highlight">الفصــل الســادس</span></h2>
+      <p class="section-title-style" style="font-size: 11pt; text-align: center; margin-bottom: 0.5cm; line-height:1.5;">
+        <span class="highlight">أشجــار ونباتــات أخــر حيــة ؛ بصــلات وبصيــلات وجــذور وماشابههــا ؛<br>أزهــار مقطوفــة وأغصــان وارقــة للزينــة</span>
+      </p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;"><span class="highlight">ملاحظــات :</span></p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em; line-height:1.8;">1 – مع مراعاة أحكام الجزء الثانى من البند <span class="highlight">06.01</span> ، فإن هذا الفصل يشمل فقط الأشجار الحية والأصناف (بما فيها شتلات الخضر) من الأنواع التي ينتجها عادة بستانيو المشاتل والحدائق و الزهارون لأغراض الغرس أو الزينة ؛ غير أن هذا الفصل لايشمل البطاطا (البطاطس) والبصل والعسقلان والثوم والمنتجات الأخر المذكورة في الفصل 7 .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm; margin-right:1em; line-height:1.8;">2 – تعامل الباقات، السلال، الأكاليل <span class="highlight">ومايماثلها</span> ، المحتوية على أى من أصناف البندين <span class="highlight">06.03</span> و <span class="highlight">06.04</span> ، ذات المعاملة لهذة الأصناف، وبصرف النظر عن اللوازم المضافة إليهم من مواد أخر . ومع ذلك ، فلا يشمل هذان البندان أصناف فن اللصق (كولاج) ولوحات الزينة المماثلة الداخلة في البند <span class="highlight">97.01</span> .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;"><span class="highlight">إعتبــارات عــامـــة</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;">يشمل هذا الفصل كافة النباتات الحية من الأنواع التي ينتجها بستانيو الحدائق أو المشاتل أو الزهارون، <span class="highlight">والتى</span> تكون في حالة صالحة للزراعة أو لأغراض الزينة وكذلك نباتات وجذور الهندباء (شيكوريا) والجذور، عدا الجذور الداخلة في البند <span class="highlight">12.12</span> ، حتى وإن لم ينتجها عادة بستانيو المشاتل أو بائعوا الزهور . وهو يشمل الأشجار والشجيرات والأغراس وشتلات الخضر وتشمل ، فيما تشمل ، النباتات المستعملة للأغراض الطبية . ولا يشمل الفصل البذور والفواكه وبعض الدرنات والبصلات (كالبطاطس والبصل والعسقلان والثوم) <span class="highlight">والتى</span> يتعذر التمييز بين أصنافها المستعملة في الطعام وتلك المستعملة للزراعة .</p>
+    </div>
+    <div class="page-number-style">70</div>
+  </div>
+
+</body>
+</html>

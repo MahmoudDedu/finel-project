@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكتاب - الغلاف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2; /* Tailwind: bg-gray-100 */
+      direction: rtl;
+      font-family: 'Amiri', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm; /* Use min-height for pages with varying content length */
+      background: white; /* Tailwind: bg-white */
+      margin: 2rem auto; /* Tailwind: my-8 mx-auto */
+      padding: 2.5cm 2cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Tailwind: shadow-lg */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    /* General text styles from example, can be overridden by more specific ones */
+    .chapter-title-style { /* Renamed to avoid conflict if used differently than example */
+      font-size: 22pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .section-title-style { /* Renamed */
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+    }
+    .content-style p, .content-style div, .content-style li { /* Applied to paragraphs/divs within content */
+      font-size: 14pt;
+      line-height: 2;
+      text-align: justify;
+    }
+    .content-style p { /* Indent only paragraphs directly under content, not in lists etc. unless specified */
+        text-indent: 1cm;
+    }
+    .page-number-style {
+      position: absolute;
+      bottom: 2cm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12pt;
+    }
+    strong {
+      font-weight: bold;
+    }
+
+    /* Custom styles for the cover page elements */
+    .cover-top-header {
+      font-size: 14pt;
+      text-align: center;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-main-title {
+      font-size: 40pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+      margin-top: 1cm; /* Adjusted */
+      letter-spacing: 2px; /* Optional: for stretched look */
+    }
+    .cover-subtitle {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2cm;
+    }
+    .cover-volume-title {
+      font-size: 28pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .cover-description {
+      font-size: 16pt;
+      text-align: center;
+      margin-bottom: 2.5cm; /* Adjusted */
+    }
+    .cover-translation-note {
+      font-size: 12pt;
+      text-align: center;
+      margin-top: auto; /* Pushes to bottom if flex container */
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-authority-section {
+      font-size: 12pt;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-final-note {
+      font-size: 11pt; /* Slightly larger than 10pt for readability */
+      text-align: justify;
+      margin-top: 1cm; /* Spacing from elements above */
+      /* margin-bottom: 2cm; /* Ensure it's above page bottom if no page number */
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+    <div class="page">
+    <div class="content-style" style="padding-top: 0.1cm;"> <p style="text-indent: 1cm; margin-bottom: 0.3cm;">تبند السلع قانونياً في البنود الفرعية التابعة لنفس البند وفقاً لنصوص وملاحظات هذه البنود الفرعية وكذلك وفقاً للقواعد القانونية المنصوص عليها أعلاه ، مع تعديل مايجب تعديله ، مع العلم أنه لايمكن مقارنة البنود الفرعية إلا إذا كانت من ذات المستوى .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.5cm;">ومن أجل تطبيق أحكام هذه القاعدة ، تطبق أيضاً ملاحظات الأقسام والفصول مالم ينص على خلاف ذلك.</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.7cm; margin-bottom: 0.3cm; font-size: 14pt;">ملاحظة تفسيرية</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(1) تحكم القواعد القانونية العامة من الأولى حتى الخامسة أعلاه ، مع تعديل ما يجب تعديله، التبنيد على مستويات البنود الفرعية داخل نطاق ذات البند .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(2) من أجل تطبيق أحكام القاعدة السادسة يقصد بالعبارات التالية المعاني المبينة إزاء كل منها :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">( أ ) " البنود الفرعية على ذات المستوى " هي البنود الفرعية ذات الشرطة الواحدة (المستوى الأول) أو البنود الفرعية ذات الشرطتين (المستوى الثاني) . وهكذا ، فإنه لدى المقارنة بين البدائل ذات العلاقة ببندين بنديين فرعيين أو أكثر (من المستوى الأول شرطة واحدة) داخل نطاق البند الواحد، وطبقاً لنص القاعدة الثالثة ( أ )، فإن " الأكثر تخصيصاً أو " الأكثر مماثلة " منها بالنسبة لصنف ما يجب أن يحدد فقط على أساس نصوص البنود الفرعية المتقاسمة من المستوى الأول (بشرطة واحدة) . فإذا تم إختيار أحد هذه البنود الفرعية من المستوى الأول بإعتباره الأكثر تخصيصاً وكان هذا البند نفسه مقسماً الى بنود فرعية أخرى فعند ذلك ، وعند ذلك فقط ، فإن نصوص البنود الفرعية من المستوى الثاني ( ذات الشرطتين ) يمكن أخذها في الإعتبار عند تحديد أى من هذه البنود ( ذات الشرطتين) الواجبة التطبيق .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">(ب) يقصد بعبارة " مالم ينص على خلاف ذلك " عندما لاتكون ملاحظات الأقسام أو الفصول متعارضة مع نصوص البنود الفرعية أو ملاحظاتها . يحدث هذا مثلاً ، في الفصل <span class="highlight">71</span> عندما يختلف النطاق المحدد لعبارة " البلاتين " في الملاحظة الرابعة (ب) من ملاحظات الفصل عن ذلك المحدد "للبلاتين" في الملاحظة الثانية من ملاحظات البنود الفرعية . وهكذا من أجل تفسير البنود الفرعية <span class="highlight">7110.11</span> ، <span class="highlight">7110.19</span> ، فإن الملاحظة الثانية من ملاحظات البنود هي الواجبة التطبيق ، بينما تستبعد الملاحظة الرابعة (ب) من ملاحظات الفصل .</p>
+    </div>
+    <div class="page-number-style">11</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="padding-top: 0.1cm;"> <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(3) يجب إلا يوسع نطاق البنود الفرعية ذات الشرطتين الى ما هو بعد من نطاق البنود الفرعية ذات الشرطة الواحدة التي تنتمي إليها تلك البنود الفرعية ذات الشرطتين ، كما أن نطاق البنود الفرعية ذات الشرطة الواحدة يجب ألا يوسع الى ما هو أبعد من نطاق البند الذي تنتمي إليه البنود الفرعية ذات الشرطة الواحدة.</p>
+
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+      <div style="text-align: right; margin-top: 5cm; font-size: 14pt;">(</div>
+
+    </div>
+    <div class="page-number-style">12</div>
+  </div>
+  <div class="page">
+    <h1 class="chapter-title-style" style="font-size: 28pt; letter-spacing: 3px; margin-bottom: 1cm;">الفهــــــرس</h1>
+
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-bottom: 0.2cm;">القسم الأول</h2>
+    <p class="section-title-style" style="font-size: 16pt; text-align: center; margin-bottom: 0.2cm;">حيوانات حية ؛ ومنتجات المملكة الحيوانية</p>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.8cm;"><span style="letter-spacing: -2px;">- - - - -</span> فهرس المحتويات <span style="letter-spacing: -2px;">- - - - -</span></p>
+
+    <div class="content-style" style="font-size: 12pt; line-height: 1.8;">
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm;">1) المبادئ العامة لتفسير النظام المنسق</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.2cm; font-size: 14pt; text-align: right;">الفصل الأول</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">1 – حيوانات حية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">2 – لحوم وأحشاء وأطراف صالحة للأكل .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">3 – أسماك وقشريات، رخويات وغيرها من اللافقريات المائية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">4 – ألبان ومنتجات صناعة الألبان ؛ بيض طيور ؛ عسل طبيعي ؛ منتجات صالحة للأكل من أصل حيواني ، غير مذكورة <span class="highlight">ولاداخلة</span> في مكان آخر .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">5 – منتجات أخر من أصل حيواني، غير مذكورة <span class="highlight">ولاداخلة</span> في مكان آخر .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الثاني</h2>
+      <p class="section-title-style" style="font-size: 16pt; text-align: center; margin-bottom: 0.2cm;">منتجات المملكة النباتية</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">6 – أشجار ونباتات أخر حية ؛ بصيلات وبصيلات وجذور <span class="highlight">وماشابهها</span> ؛ أزهار مقطوفة وأغصان مورقة للزينة.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">7 – خضر ونباتات وجذور ودرنات، صالحة للأكل .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">8 – فواكه وأثمار قشرية صالحة للأكل؛ قشور حمضيات وقشور بطيخ أو شمام .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">9 – بن <span class="highlight">وشاى</span> ومته وبهارات وتوابل .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">10 – حبوب .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">11 – منتجات مطاحن ؛ شعير ناشط ( مالت ) ؛ نشاء حبوب أو جذور أو درنات ؛ اينولين ؛ دابوق القمح (جلوتين) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">12 – بذور وأثمار زيتية ؛ حبوب وبذور وأثمار متنوعة؛ نباتات للصناعة أو الطب ؛ قش وعلف .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">13 – صمغ اللك؛ صموغ وراتنجات وغيرها من عصارات وخلاصات نباتية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">14 – مواد ضفر نباتية ؛ منتجات أخر من أصل نباتي غير مذكورة ولا داخلة في مكان آخر .</p>
+    </div>
+    <div class="page-number-style">13</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-bottom: 0.2cm;">القسم الثالث</h2>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">شحوم ودهون وزيوت حيوانية أو نباتية ، ومنتجات تفككها؛ دهون غذائية محضرة ؛<br>شموع من أصل حيواني أو نباتي .</p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.8;">
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">15 – شحوم ودهون وزيوت حيوانية أو نباتية ، ومنتجات تفككها ؛ دهون غذائية محضرة ؛ شموع من أصل حيواني أو نباتي .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الرابع</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.2cm; line-height:1.6;">منتجات صناعة الأغذية ؛ مشروبات ، سوائل كحولية وخل ؛<br>تبغ وأبدال تبغ مصنعة</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظة القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">16 – محضرات لحوم ومحضرات أسماك <span class="highlight">أوقشريات</span> أو رخويات أو غيرها من اللافقريات المائية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">17 – سكر ومصنوعات سكرية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">18 – كاكاو ومحضراته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">19 – محضرات أساسها الحبوب أو الدقيق أو النشاء أو الحليب ؛ فطائر .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">20 – محضرات خضر ومحضرات أثمار قشرية <span class="highlight">أوفواكه</span> ومحضرات من أجزاء أخر من النباتات .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">21 – محضرات غذائية متنوعة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">22 – مشروبات ، سوائل كحولية وخل .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">23 – بقايا ونفايات صناعات الأغذية ؛ أغذية محضرة للحيوانات .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">24 – تبغ وأبدال تبغ مصنعة .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الخامس</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm;">منتجات معدنية</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">25 – ملح ؛ كبريت؛ أتربة وأحجار؛ مواد جبسية، كلس (جير) وإسمنت .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">26 – خامات معادن، خبث ورماد .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">27 – وقود معدني ، زيوت معدنية ومنتجات تقطيرها ؛ مواد قارية ؛ شموع معدنية .</p>
+    </div>
+    <div class="page-number-style">14</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-bottom: 0.2cm;">القسم السادس</h2>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">منتجات الصناعات الكيماوية أو الصناعات المرتبطة بها</p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">– 28 – منتجات كيماوية غير عضوية؛ مركبات عضوية أو غير عضوية من معادن ثمينة، أو من معادن أتربة نادرة أو من عناصر مشعة أو من نظائر (<span class="highlight">ايزوتوب</span>) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">29 – منتجات كيماوية عضوية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">30 – منتجات صيدلة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">31 – أسمدة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">32 – خلاصات للدباغة والصباغة؛ مواد دابغة ومشتقاتها؛ أصباغ، ألوان سطحية (بيجمنت) ومواد ملونة أخر؛ دهانات وورنيش ؛ معاجين ؛ حبر .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">33 – زيوت عطرية وراتنجات عطرية (رزينويد)؛ محضرات عطور أو تطرية (<span class="highlight">كوزماتيك</span>) أو تجميل (تواليت).</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">34 – صابون ، عوامل عضوية ذات نشاط سطحي ، محضرات غسيل ، محضرات تشحيم ، شموع إصطناعية، شموع محضرة، محضرات صقل أو تلميع، شموع إضاءة وأصناف مماثلة، معاجين لصنع النماذج "شموع طب الأسنان"، ومحضرات طب الأسنان أساسها الجص .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">35 – مواد زلالية ؛ منتجات أساسها النشاء المعدل ؛ غراء ؛ إنزيمات .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">36 – بارود ومتفجرات ؛ منتجات نارية فنية ؛ ثقاب ؛ خلائط معدنية لإحداث الإشتعال؛ مواد لهوب .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">37 – منتجات تصوير فوتوغرافي أو سينمائي .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">38 – منتجات كيماوية متنوعة .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم السابع</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">لدائن ومصنوعاتها ؛ مطاط ومصنوعاته</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">39 – لدائن ومصنوعاتها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:0.5em;">40 – مطاط ومصنوعاته .</p>
+    </div>
+    <div class="page-number-style">15</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">القسم الثامن</h2>
+    <p class="section-title-style" style="font-size: 12pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      <span class="highlight">صلال</span> وجلود خام ، جلود مدبوغة أو مهيأة ، جلود بفراء ومصنوعات هذه المواد ؛<br>
+      أصناف عدة الحيوانات والسراجة ؛ لوازم السفر، حقائب يدوية وأوعية مماثلة لها ؛<br>
+      مصنوعات من مصارين الحيوانات (عدا مصارين دودة القز)
+    </p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.8;">
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">41 – <span class="highlight">صلال</span> وجلود خام (عدا الجلود بفراء)، جلود مدبوغة أو مهيأة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">42 – مصنوعات من جلد؛ أصناف عدة الحيوانات والسراجة؛ لوازم السفر، حقائب يدوية وأوعية مماثلة لها؛ مصنوعات من مصارين الحيوانات (عدا مصارين دودة القز) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">43 – جلود بفراء طبيعية وفراء مقلدة (إصطناعية) ؛ مصنوعاتهم .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم التاسع</h2>
+      <p class="section-title-style" style="font-size: 12pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+        خشب ومصنوعاته ؛ فحم خشبي ؛ فلين ومصنوعاته ؛ مصنوعات من القش أو الحلفاء<br>
+        أو غيرها من مواد الضفر؛ أصناف صناعتي الحصر والسلال .
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">44 – خشب ومصنوعاته ؛ فحم خشبي .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">45 – فلين ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">46 – مصنوعات من القش أو الحلفاء أو غيرها من مواد الضفر ؛ أصناف صناعتي الحصر والسلال .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم العاشر</h2>
+      <p class="section-title-style" style="font-size: 12pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+        عجائن من خشب أو مواد ليفية سليلوزية أخر؛ ورق أو ورق مقوى (نفايات وفضلات)<br>
+        بغرض إعادة التصنيع؛ ورق وورق مقوى ومصنوعاتهما
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">47 – عجائن من خشب أو مواد ليفية سليلوزية أخر ؛ ورق وورق مقوى (نفايات وفضلات) بغرض إعادة التصنيع .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">48 – ورق وورق مقوى ؛ مصنوعات من عجينة السليلوز، من ورق أو ورق مقوى (كرتون) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">49 – كتب وصحف وصور وغيرها من منتجات صناعة الطباعة ؛ مخطوطات يدوية ومستنسخات وتصاميم .</p>
+    </div>
+    <div class="page-number-style">16</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">القسم الحادي عشر</h2>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      مواد نسجية ومصنوعاتها
+    </p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">50 – حرير طبيعي .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">51 – صوف ، وبر حيواني ناعم أو خشن ؛ خيوط وأقمشة منسوجة من شعر الخيل .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">52 – قطن .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">53 – ألياف نسجية نباتية أخر ؛ خيوط من ورق وأقمشة منسوجة منها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">54 – شعيرات تركيبية أو إصطناعية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">55 – ألياف تركيبية أو إصطناعية غير مستمرة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">56 – حشو، لباد ولا منسوجات؛ خيوط خاصة ؛ خيوط جزم، حبال وأمراس؛ أصناف صناعة الحبال .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">57 – سجاد وأغطية أرضيات أخر من مواد نسجية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">58 – أقمشة خاصة منسوجة؛ أقمشة بسطوح ذات خمل " وبر " من مواد نسجية ؛ مسننات (<span class="highlight">دانتلا</span>) ؛ دبابيج ؛ أصناف عقدة ؛ مطرزات .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">59 – نسج مشربة <span class="highlight">أومطلية</span> أو مغطاة أو منضدة؛ أصناف نسجية للإستخدام التقني أو الصناعي .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">60 – أقمشة مصنرة أو كروشيه .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">61 – ألبسة وتوابع ألبسة ، من مصنرات أو كروشيه .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">62 – ألبسة وتوابع ألبسة ، من غير المصنرات أو الكروشيه .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">63 – أصناف أخر جاهزة من مواد نسجية ؛ مجموعات (أطقم)؛ ألبسة مستعملة وأصناف نسجية مستعملة ؛ أسمال وخرق .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الثاني عشر</h2>
+      <p class="section-title-style" style="font-size: 11pt; text-align: center; margin-bottom: 0.5cm; line-height:1.5;">
+        أصناف الأحذية ، أغطية رأس، مظلات مطر، مظلات شمس، عصى مشى، عصى بمقاعد ، سياط<br>
+        وسياط الفروسية، أجزاء هذه الأصناف ؛ ريش محضر وأصناف مصنوعة منه ؛<br>
+        أزهار إصطناعية ؛ مصنوعات من شعر بشرى
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">64 – أحذية وطماقات ومايماثلها ؛ أجزاء هذه الأصناف .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">65 – أغطية رأس وأجزاؤها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">66 – مظلات مطر ، مظلات شمس ، عصى ، عصى بمقاعد ، سياط وسياط الفروسية ، وأجزاء هذه الأصناف .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">67 – ريش وزغب محضران وأصناف مصنوعة منهما ؛ أزهار إصطناعية ؛ أصناف من شعر بشرى .</p>
+    </div>
+    <div class="page-number-style">17</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">القسم الثالث عشر</h2>
+    <p class="section-title-style" style="font-size: 11pt; text-align: center; margin-bottom: 0.5cm; line-height:1.5;">
+        مصنوعات من حجر أو جص أو أسمنت أو حرير <span class="highlight">صخرى</span> (أسبستوس أو أميانت)<br>
+        أو ميكا أو من مواد مماثلة ؛ منتجات من خزف ؛ زجاج ومصنوعاته
+    </p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">68 – مصنوعات من حجر أو جص أو أسمنت أو حرير <span class="highlight">صخرى</span> (أسبستوس أو أميانت) أو ميكا أو من مواد مماثلة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">69 – منتجات من خزف .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">70 – زجاج ومصنوعاته .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الرابع عشر</h2>
+      <p class="section-title-style" style="font-size: 11pt; text-align: center; margin-bottom: 0.5cm; line-height:1.5;">
+        لؤلؤ <span class="highlight">طبيعى</span> أو مستنبت ، وأحجار كريمة أو شبه كريمة ، معادن ثمينة ، ومعادن عادية مكسوة<br>
+        بقشرة من معادن ثمينة ، ومصنوعات هذه المواد ؛ حلى الغواية (مقلدة) ؛ نقود .
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">71 – لؤلؤ <span class="highlight">طبيعى</span> أو مستنبت ، وأحجار كريمة أو شبه كريمة، معادن ثمينة، ومعادن عادية مكسوة بقشرة من معادن ثمينة ، ومصنوعات هذه المواد ؛ حلى الغواية (مقلدة) ؛ نقود .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الخامس عشر</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">معادن عادية ومصنوعاتها</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">72 – حديد صب (ظهر) وحديد ، وصلب (فولاذ) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">73 – مصنوعات من حديد صب (ظهر) أو حديد أو صلب (فولاذ) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">74 – نحاس ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">75 – نيكل ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">76 – ألومنيوم ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">77 – فصل <span class="highlight">إحتياطى</span> لإستكمال لاحق محتمل في النظام المنسق .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">78 – رصاص ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">79 – زنك (توتياء) ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">80 – قصدير ومصنوعاته .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">81 – معادن عادية أخر ؛ خلائط معدنية خزفية (سيرميت) ؛ مصنوعاتها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">82 – عدد ، أدوات قاطعة وأدوات مائدة ، من معادن عادية ؛ أجزاء هذه الأصناف من معادن عادية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">83 – أصناف متنوعة من معادن عادية .</p>
+    </div>
+    <div class="page-number-style">18</div>
+  </div><div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">القسم السادس عشر</h2>
+    <p class="section-title-style" style="font-size: 11pt; text-align: center; margin-bottom: 0.5cm; line-height:1.5;">
+        آلات وأجهزة آلية ؛ معدات كهربائية ؛ أجزاؤها ؛ أجهزة تسجيل وإذاعة الصوت ، أجهزة تسجيل<br>
+        وإذاعة الصوت والصورة فى الإذاعة المرئية (تليفزيون ) ، أجزاء ولوازم هذه الأجهزة
+    </p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">84 – مفاعلات نووية ، مراجل ، آلات وأجهزة ؛ أجزاؤها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">85 – آلات وأجهزة ومعدات كهربائية وأجزاؤها ؛ أجهزة تسجيل وإذاعة الصوت ، أجهزة تسجيل وإذاعة الصوت والصورة فى الإذاعة المرئية (تليفزيون ) ، وأجزاء ولوازم هذه الأجهزة .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم السابع عشر</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+        عربات ، طائرات ، سفن و معدات نقل
+      </p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; font-size: 13pt; text-align: right;">ملاحظات القسم</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">86 – قاطرات وعربات ومعدات للسكك الحديدية أو مايماثلها ، وأجزؤها ؛ أجهزة إشارة آلية أو كهربائية لطرق المواصلات .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">87 – سيارات وجرارات ودراجات ومركبات وعربات أخر، وأجزاؤها ولوازمها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">88 – مركبات جوية ومركبات فضائية ، وأجزاؤها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">89 – سفن، قوارب <span class="highlight">ومنشأت</span> عائمة .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الثامن عشر</h2>
+      <p class="section-title-style" style="font-size: 10pt; text-align: center; margin-bottom: 0.5cm; line-height:1.4;">
+        أدوات وأجهزة للبصريات أو التصوير الفوتوغرافي أو السينمائي أو للقياس أو للفحص والمراقبة<br>
+        أو للقياس والضبط الدقيق ؛ أدوات وأجهزة للطب أو للجراحة ؛ أصناف صناعة الساعات ؛ أدوات<br>
+        موسيقية ؛ أجزاء ولوازم هذه الأدوات والأجهزة
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">90 – أدوات وأجهزة للبصريات أو التصوير الفوتوغرافي أو السينمائي أو للقياس أو للفحص والمراقبة أو للقياس والضبط الدقيق؛ أدوات وأجهزة للطب أو للجراحة ؛ أجزاء ولوازم هذه الأدوات والأجهزة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">91 – أصناف صناعة الساعات وأجزاؤها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">92 – أدوات موسيقية ، أجزاؤها ولوازمها .</p>
+    </div>
+    <div class="page-number-style">19</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">القسم التاسع عشر</h2>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      أسلحة وذخائر ؛ أجزاؤها ولوازمها
+    </p>
+    <div class="content-style" style="font-size: 12pt; line-height: 1.7;">
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">93 – أسلحة وذخائر ؛ أجزاؤها ولوازمها .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1.5cm; margin-bottom: 0.2cm;">القسم العشرون</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+        <span style="letter-spacing: -2px;">- - - - - - -</span><br>
+        سلع ومنتجات متنوعة<br>
+        <span style="letter-spacing: -2px;">- - - - - - -</span>
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">94 – أثاث ؛ آلات للطب والجراحة، أصناف للأسرة؛ (حشايا، حوامل حشايا، وسائد وأصناف محشوة مماثلة)؛ أجهزة إنارة ، غير مذكورة ولا داخلة فى مكان آخر؛ إشارات ضوئية ، لوحات إعلانية أو إرشادية مضيئة، وأصناف مماثلة ؛ منشآت مسبقة الصنع .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">95 – لعب أطفال وألعاب مجتمعات، أصناف للتسلية أو الرياضة ؛ أجزاؤها ولوازمها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">96 – مصنوعات متنوعة .</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1.5cm; margin-bottom: 0.2cm;">القسم <span class="highlight">الحادى</span> والعشرون</h2>
+      <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+        تحف فنية ، قطع للمجموعات وقطع أثرية
+      </p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">97 – تحف فنية ، قطع للمجموعات وقطع أثرية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">98 – (فصل <span class="highlight">إحتياطى</span>) لإستعمالات خاصة من قبل الأطراف المتعاقدة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">99 – (فصل <span class="highlight">إحتياطى</span>) لإستعمالات خاصة من قبل الأطراف المتعاقدة .</p>
+    </div>
+    <div class="page-number-style">20</div>
+  </div>
+
+</body>
+</html>

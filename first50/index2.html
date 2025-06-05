@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكتاب - الغلاف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2; /* Tailwind: bg-gray-100 */
+      direction: rtl;
+      font-family: 'Amiri', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm; /* Use min-height for pages with varying content length */
+      background: white; /* Tailwind: bg-white */
+      margin: 2rem auto; /* Tailwind: my-8 mx-auto */
+      padding: 2.5cm 2cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Tailwind: shadow-lg */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    /* General text styles from example, can be overridden by more specific ones */
+    .chapter-title-style { /* Renamed to avoid conflict if used differently than example */
+      font-size: 22pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .section-title-style { /* Renamed */
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+    }
+    .content-style p, .content-style div, .content-style li { /* Applied to paragraphs/divs within content */
+      font-size: 14pt;
+      line-height: 2;
+      text-align: justify;
+    }
+    .content-style p { /* Indent only paragraphs directly under content, not in lists etc. unless specified */
+        text-indent: 1cm;
+    }
+    .page-number-style {
+      position: absolute;
+      bottom: 2cm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12pt;
+    }
+    strong {
+      font-weight: bold;
+    }
+
+    /* Custom styles for the cover page elements */
+    .cover-top-header {
+      font-size: 14pt;
+      text-align: center;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-main-title {
+      font-size: 40pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+      margin-top: 1cm; /* Adjusted */
+      letter-spacing: 2px; /* Optional: for stretched look */
+    }
+    .cover-subtitle {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2cm;
+    }
+    .cover-volume-title {
+      font-size: 28pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .cover-description {
+      font-size: 16pt;
+      text-align: center;
+      margin-bottom: 2.5cm; /* Adjusted */
+    }
+    .cover-translation-note {
+      font-size: 12pt;
+      text-align: center;
+      margin-top: auto; /* Pushes to bottom if flex container */
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-authority-section {
+      font-size: 12pt;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-final-note {
+      font-size: 11pt; /* Slightly larger than 10pt for readability */
+      text-align: justify;
+      margin-top: 1cm; /* Spacing from elements above */
+      /* margin-bottom: 2cm; /* Ensure it's above page bottom if no page number */
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+    <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 1cm; margin-bottom: 0.2cm;">القسم الأول</h2>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 1cm; line-height:1.6;">
+      حيوانات حية ؛ منتجات حيوانية
+    </p>
+    <div class="content-style" style="font-size: 14pt; line-height: 2;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.3cm; text-align: right;">ملاحظات القسم :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-right:1em;">1 – كل إشارة في هذا القسم الى نوع أو جنس معين من الحيوان تشمل <span class="highlight">ايضاً</span> صغاره من هذا النوع أو الجنس، مالم ينص على خلاف ذلك .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-right:1em;">2 – ما لم ينص على خلاف ذلك ، فإن أية إشارة في جدول التعريفة الى المنتجات " المجففة " تشمل أيضاً المنتجات التي نزع ملؤها ، أو بخرت أو جففت بالتجميد .</p>
+    </div>
+    <div class="page-number-style">21</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">الفصل الأول</h2>
+    <p class="section-title-style" style="font-size: 16pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      حيوانــات حيـــــة
+    </p>
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">ملاحظـــــة الفصل :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">1 – يشمل هذا الفصل جميع الحيوانات الحية بإستثناء :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">أ – الأسماك والقشريات ، الرخويات واللافقريات المائية الأخر ، المذكورة في البنود <span class="highlight">03.01</span> أو <span class="highlight">03.06</span> أو <span class="highlight">03.07</span> ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">ب – الكائنات المجهرية المزروعة والمنتجات الأخر المذكورة في البند <span class="highlight">30.02</span> ؛ و</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.3cm;">ج – الحيوانات المذكورة في البند <span class="highlight">95.08</span> .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;">إعتبـــــارات عــامــــة</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">1 – يشمل هذا الفصل جميع الكائنات الحية ( الصالحة للأكل أو لأغراض أخر ) بإستثناء :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;">– الأسماك والقشريات ، الرخويات وغيرها من اللافقريات المائية .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">2 – الكائنات المجهرية المزروعة والمنتجات الأخر المذكورة في البند <span class="highlight">30.02</span> .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">3 – الحيوانات التي تكون جزءاً من السيرك ، حيوانات الإستعراضات أو غيرها من عروض الحيوان المتنقلة المماثلة (البند <span class="highlight">95.08</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">تبند الحيوانات التي تنفق أثناء النقل في أحد البنود من <span class="highlight">02.01</span> الى <span class="highlight">02.05</span> أو في البند <span class="highlight">02.07</span> أو البند <span class="highlight">02.08</span> إذا كانت من الحيوانات الصالحة للأكل والملائمة للإستهلاك البشرى . أما في الحالات الأخر فإنها يجب أن تبند في البند <span class="highlight">05.11</span>.</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">01.01</span> خيول و حمير و بغال ، حية (+) .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0101.10</span> – حيوانات أصيلة للإنسال</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0101.90</span> – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند الخيول (الإناث ، الفحول، الخيول المخصية، الأمهار والخيول الأقزام "بوني")، الحمير ، البغال والنغال ، سواء أليفة أو برية .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">البغال هي هجين من تزاوج الحمار مع أنثى الخيل . أما النغال <span class="highlight">فهى</span> هجين من تزاوج فحل الخيل مع أنثى الحمار .</p>
+    </div>
+    <div class="page-number-style">22</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8; padding-top:0.5cm;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">ملاحظات البند الفرعي :</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البند الفرعي <span class="highlight">0101.10</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">لأغراض تطبيق البند الفرعي <span class="highlight">0101.11</span> ، تشمل عبارة " أصيلة للإنسال " فقط خيول الإنسال التي تعتبر " أصيلة " من قبل السلطات الوطنية المختصة .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">01.02</span> حيوانات حية من فصيلة الأبقار (+) .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0102.10</span> – أصيلة للإنسال</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0102.90</span> – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند كل الحيوانات من فصيلة الأبقار ، وإن لم تكن أليفة وبغض النظر عن الغاية من إستعمالها (مثل ، السلالات ، التربية ، التسمين ، الإنسال ، الذبح) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">وتشمل هذه الحيوانات ، فيما تشمل :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(1) الحيوانات من جنس " بوس " ، بما فيها الثور المعروف باسم "بوس تورين" ، <span class="highlight">ذى الحدبه</span> "بوس انديكوس" وثور " <span class="highlight">الزائيرامس</span> " .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(2) الحيوانات من جنس "بوبالوس" ، بما فيها الجاموس الهندى أو المائى "بوبالوس بوبالوس" أو الجاموس <span class="highlight">الآسيوى</span> أو <span class="highlight">الآرنى</span> "بوبالوس آرنى" <span class="highlight">والسليبيد آنوا</span> أو الجاموس القزم (بوبالوس <span class="highlight">ديبريسيكورنيس</span> أو آنوا <span class="highlight">ديبريسيكورنيس</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(3) الثيران الآسيوية من جنس " بيبيوس " ، مثل الثور الهندى البرى " بيبيوس جاروس" والجيهل "بيبيوس فرونتاليس" والبانتيج "بيبيوس سونديكوس " .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(4) الجاموس <span class="highlight">الأفريقى</span> من جنس "سينشيروس " مثل الجاموس القزم ، " سينشيروس نانوس " وجاموس <span class="highlight">الكافارى</span> الكبير الحجم "سينشيروس كافير " .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(5) ثور التبت " الياك " (<span class="highlight">بويفاجس جرولينس</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(6) الحيوانات من جنس "بيسون " مثل الثور الأمريكى "بيسون بيسون" أو الجاموس والثور الأوروبى (بيسون بوناسوس) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(7) الجاموس من نوع " <span class="highlight">بيفالو</span> " (هجين بين " البيسون " والبقر الأليف) .</p>
+    </div>
+    <div class="page-number-style">23</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8; padding-top:0.5cm;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">ملاحظة البند الفرعي :</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البند الفرعي <span class="highlight">0102.10</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">لأغراض تطبيق البند الفرعي <span class="highlight">0102.10</span> ، فإن عبارة " حيوانات أصيلة للإنسال " تشمل فقط الحيوانات للإنسال التي تعتبر أصيلة من قبل السلطات الوطنية المختصة .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">01.03</span> حيوانات حية من فصيلة الخنـازيـــــر (+) :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0103.10</span> – أصيلة للإنسال</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– غيرها :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0103.91</span> – – بوزن أقل من 50 كج</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0103.92</span> – – بوزن 50 كج أو أكثر</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند كل من الخنازير الأليفة والوحشية ( مثل الخنازير البرية ) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.2cm; text-align: right;">ملاحظات البنود الفرعية :</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البند الفرعي <span class="highlight">0103.10</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">لأغراض تطبيق البند الفرعي <span class="highlight">0103.10</span> ، فإن عبارة "حيوانات أصيلة للإنسال "، تشمل فقط الحيوانات للإنسال التي تعتبر أصيلة من قبل السلطات الوطنية المختصة .</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البنود الفرعية <span class="highlight">0103.91</span> و <span class="highlight">0103.92</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">لأغراض تطبيق البندين الفرعيين <span class="highlight">0103.91</span> و <span class="highlight">0103.92</span>، فإن حدود الوزن المعينة فيهما تتعلق بوزن كل حيوان على حدة .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">01.04</span> حيوانات حية من <span class="highlight">فصيلتى</span> الضــأن والمــاعـــــز .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0104.10</span> – ضــــــأن</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0104.20</span> – مـــاعـــــز</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ويشمل هذا البند الضأن الأليف أو <span class="highlight">البرى</span> ( الأكياس، النعاج والحملان)، والماعز الأليفة منها أو البرية وصغارها.</p>
+    </div>
+    <div class="page-number-style">24</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 13pt; text-align: right;"><span class="highlight">01.05</span> ديوك ودجاجات من فصيلة جالوس دومستيكاس ، بط ، أوز، ديوك ودجاجات رومية ودجاج غينيا (غرغر)، حية من الأنواع الأليفة (+) .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– بوزن لايزيد عن 185 جم :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0105.11</span> – – ديوك ودجاجات من فصيلة جالوس دومستيكاس</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0105.12</span> – – ديوك ودجاجات رومية</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0105.19</span> – – غيــرهــــا :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– ديوك ودجاجات من فصيلة جالوس دومستيكاس، بوزن لايزيد عن 2000 جم</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0105.92</span> – – ديــوك ودجـــاجات من فصيلة جالوس دومستــيكاس ، بــوزن يزيـــد عن 2000 جم</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0105.93</span> – – <span class="highlight">(وصف هذا البند غير واضح/مفقود في الصورة)</span></p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0105.99</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند فقط الطيور الأليفة الحية من الأنواع <span class="highlight">المحدده</span> في البند. إن الطيور من فصيلة " جالوس دومستيكاس " تشمل الدجاج والديوك المخصية . أما الطيور الحية <span class="highlight">الأخر</span> (مثل ، الحجل ، التدرج ، الحمام ، البط <span class="highlight">البرى</span>، الأوز <span class="highlight">البرى</span> ) ، فإنها مستثناة من هذا البند (البند <span class="highlight">01.06</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.2cm; text-align: right;">ملاحظة البند الفرعي :</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">للبنود الفرعية <span class="highlight">0105.11</span> و <span class="highlight">0105.12</span> و <span class="highlight">0105.19</span> و <span class="highlight">0105.92</span> و <span class="highlight">0105.93</span> . لأغراض تطبيق البنود الفرعية المذكورة أعلاه ، فإن حدود الوزن المعينة فيها تتعلق بوزن كل طائر على حدة.</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">0106</span> حيــوانــات حيـــــة أخـــــر .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– ثديات</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0106.11</span> – – رئيسيات .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0106.12</span> – – حيتان ودلافين و خنازير البحر (ثديات بحرية من رتبة الحيتان"<span class="highlight">Cetacea</span>") و خراف البحر و<span class="highlight">الأطوم</span> (ثديات من رتبة الخيلانيات ) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0106.19</span> – – غيرها .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0106.20</span> – – زواحف بما فيها الأفاعي و السلاحف .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– طيور</p>
+    </div>
+    <div class="page-number-style">25</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 12pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0106.31</span> – – طيور مفترسة .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0106.32</span> – – فصيلة الببغائيات (بما فيها الببغاء و الباركيت و الماكاو و الكوكاتو ) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0106.39</span> – – غيرها .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0106.96</span> – – غيرها .</p>
+
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند ، فيما يشمل ، الحيوانات الحية الأليفة والبرية التالية :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">أ – الثدييات</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm;">1) الرئيسيات .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm;">2) حيتان و دلافين و خنازير البحر (ثديات من رتبة الحيتان ) و خراف البحر والأطوم (ثديات من رتبة الخيلانيات "Sirenia") <span class="highlight">0</span></p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm;">3) غيرها ( مثال الرنة ، القطط و الكلاب ، الأسود و النمور ، الدببة و الأفيال و الجمال و الوعل <span class="highlight">الموحشى</span> ، الأرانب البرية و الأرنبة ، الغزلان و الظباء و <span class="highlight">الشموا</span> و الثعالب ، حيوانات المنك و الحيوانات الأخرى التي تربى من أجل فرائها ) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">ب- الزواحف بما فيها الأفاعي و السلاحف .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">ج- الطيور .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm;">1- الطيور المفترسة .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm;">2- الطيور من فصيلة الببغائيات بما فيها الببغاء و الباركيت و الماكاو و الكوكاتو .</p>
+      <p style="text-indent: 2cm; margin-right:2em; margin-bottom: 0.1cm;">3- غيرها من الحجال والتدرج والسمان ودجاج الأرض والشنقب والحمام و<span class="highlight">الطيهوج</span> وبلبل الشعير والبط البرى والأوز البرى وطائر <span class="highlight">الطوقش</span> و<span class="highlight">الطحارير</span> واللقالق والعصافير وطائر الحسون وطائر <span class="highlight">القرقف</span> والببغاوات والطيور الطنانة والطواويس والبجع والطيور الأخر غير الداخلة في البند <span class="highlight">01.05</span> .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">د- غيرها (مثل النحل إن كان داخل صناديق النقل أو أقفاص أو قفران "خلايا") .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;"><span class="font-bold">ملاحظة :</span> هذا البند يستثنى حيوانات السيرك المتنقل و حيوانات الإستعراض .</p>
+    </div>
+    <div class="page-number-style">26</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">الفصل الثانى</h2>
+    <p class="section-title-style" style="font-size: 16pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      لحوم وأحشاء وأطراف صالحة للأكل
+    </p>
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">ملاحظـــة الفصل :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">1 – لايشمل هذا الفصل :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">أ – المنتجات من الأنواع المذكورة في البنود من <span class="highlight">02.01</span> الى <span class="highlight">02.08</span> أو البند <span class="highlight">02.10</span> ، غير الصالحة للإستهلاك البشرى ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">ب – مصارين ومثانات ومعد الحيوانات (البند <span class="highlight">05.04</span>) ودم الحيوانات (البند <span class="highlight">05.11</span> أو البند <span class="highlight">30.02</span>) ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.3cm;">ج – الشحوم الحيوانية عدا المنتجات الداخلة في البند <span class="highlight">02.09</span> (الفصل 15) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;">إعتبـــــارات عــامــــة</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يطبق هذا الفصل على اللحوم بشكل ذبائح كاملة (أى، جسم الحيوان سواءً برأس أو بدون رأس ) ، أنصاف الذبائــح ( الناتجة عن شطر ذبيحة بالطول ) ، الأربـــاع ، القطع .. إلخ ، وعلى الأحشاء والأطراف وعلى دقيق أو مسحوق أو سميد اللحوم أو الأحشاء أو الأطراف لجميع الحيوانات (بإستثناء الأسماك والقشريات، الرخويات واللافقريات المائية الأخر – الفصل الثالث)، الصالحة للإستهلاك البشرى .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يستثنى من هذا الفصل اللحوم والأحشاء والأطراف غير الصالحة للإستهلاك البشرى (البند <span class="highlight">05.11</span>) . و يستثنى <span class="highlight">ايضاً</span> من هذا الفصل الدقيق والمسحوق والكريات المكثفة غير الصالحة للإستهلاك البشرى، المتحصل عليها من اللحوم أو الأحشاء والأطراف (البند <span class="highlight">23.01</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">عموماً ، يمكن تصنيف الأحشاء والأطراف في أربعة مجموعات :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">1 – ما يستعمل منها بصفة رئيسية للإستهلاك البشرى (مثل، الرؤوس وقطعها بما فيها الأذنين، والأقدام والأذناب والقلوب والألسنة والحواشى الطويلة والرقيقة والأغشية الدهنية المحيطة بالأمعاء والحلقوم والغدد الصماء) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">2 – ما يستعمل منها حصراً في تحضير منتجات الصيدلة (مثل أكياس المرارة والغدد الكظرية والمشيمة "خلاص الجنين" ) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">3 – ما يمكن أن يستعمل منها للإستهلاك البشرى أو في تحضير منتجات الصيدلة (مثل الأكباد والكلى والرئتين والمخ والبنكرياس والطحال والنخاع الشوكى والمبيض والرحم والخصيتين والضرع والغدد الدرقية والغدد النخامية) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">4 – المنتجات مثل الجلود التي يمكن إستعمالها للإستهلاك البشرى أو لأغراض أخر (مثل ، صناعة الجلد) ، الأحشاء والأطراف المشار اليها في الفقرة (1) ، سواء كانت طازجة أو مبردة أو مجمدة أو مملحة أو في</p>
+    </div>
+    <div class="page-number-style">27</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">ماء مالح أو مجففة أو مدخنة ، تبقى داخلة في هذا الفصل إلا إذا كانت غير صالحة للإستهلاك <span class="highlight">البشرى ؛ وفى</span> هذه الحالة فإنها يجب أن تخضع للبند <span class="highlight">05.11</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">الأحشاء والأطراف المشار إليها في الفقرة (2) تدخل في البند <span class="highlight">05.10</span> عندما تكون طازجة أو مبردة أو مجمدة أو محفوظة مؤقتاً بطريقة أخرى وتدخل في البند <span class="highlight">30.01</span> عندما تكون مجففة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">تبند الأحشاء والأطراف المشار إليها في الفقرة (3) كما يلى :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">( أ ) في البند <span class="highlight">05.10</span> عندما تكون محفوظة بصفة مؤقتة لتحضير منتجات الصيدلة (مثل ، المحفوظة في الجلسرين أو الأسيتون أو الكحول أو الفورمالدهيد ، أو بورات الصوديوم ) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(ب) في البند <span class="highlight">3001</span> عندما تكون مجففة .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">(ج) في الفصل الثاني عندما تكون صالحة للإستهلاك البشرى، ولكن تخضع للبند <span class="highlight">05.11</span> إذا كانت غير صالحة للإستهلاك البشرى .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">الأحشاء والأطراف المشار إليها في الفقرة (4) ، تدخل في الفصل الثاني عندما تكون صالحة للإستهلاك البشرى أو عموماً في البند <span class="highlight">05.11</span> أو في الفصل (41) إذا كانت غير صالحة للإستهلاك البشرى .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">مصــارين ومثانات ومعد الحيوانات (بإستثناء الأسماك) ، سواء كانت صالحة للأكل أو غير صالحة ، يجب أن تخضع للبند <span class="highlight">05.04</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يعامل الشحم الملتصق بالذبيحة سواء كانت كاملة أو مقطعة معاملة اللحوم . وعلى العكس من ذلك، فإن شحوم الحيوانات التي تقدم بصورة منفصلة تتبع الفصل 15، بإستثناء شحم ودهن الخنزير الصرف ودهن طيور الدواجن غير المذابة أو المستخلصة بطريقة أخرى التي تبقى داخلة في البند <span class="highlight">02.09</span> حتى وإن كانت ملائمة فقط للإستخدام <span class="highlight">الصناعى</span> .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.8cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;">التمييز بين اللحوم والأحشاء والأطراف الداخلة في هذا الفصل وتلك الداخلة في الفصل 16</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا الفصل اللحوم والأحشاء والأطراف في الحالات التالية فقط ، وإن كان قد تم سملها (بالماء المغلى أو بالبخار ) أو تم معالجتها بشكل مماثل ، ولكن غير مطبوخة :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(1) طازجة (بما في ذلك اللحوم والأحشاء والأطراف ، وإن كانت معبأة مع الملح لحفظها بصورة مؤقتة أثناء النقل) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(2) مبردة ، أى تلك التي خفضت درجة حرارتها بصورة عامة لحوالى درجة الصفر مئوية ، دون تجميدها .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">(3) مجمدة ، أى تلك التي بردت إلى ما دون درجة تجمد المنتج حتى يتجمد كلياً .</p>
+    </div>
+    <div class="page-number-style">28</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">(4) مملحة أو في ماء مالح، مجففة أو مدخنة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">تدخل أيضاً في هذا الفصل اللحوم والأحشاء والأطراف ، التي تم ذرها ذرّاً خفيفاً بالسكر أو بمحلول <span class="highlight">مائى</span> من السكر .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">وتبقى اللحوم والأحشاء والأطراف في الحالات المشار إليها في الفقرات من (1) الى (4) أعلاه داخلة في هذا الفصــل وإن أخضعت لعملية تطرية بإستعمال الأنزيمات البروتينية (مثل البابايين) أو كانت مقطعة أو بشكل شرائح أو مفرومة. وبالإضافة الى ذلك ، فإن مخاليط أو توابل من منتجات البنود المختلفة لهذا الفصل (مثل ، لحوم طيور الدواجن من البند <span class="highlight">02.07</span> المغطاة بشحم ودهن الخنزير من البند <span class="highlight">02.09</span>) تبقى داخلة في هذا الفصل .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">إن اللحوم والأحشاء والأطراف التي لاتدخل في أى من بنود هذا الفصل، يجب أن تتبع الفصل (16) ومثال ذلك :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">( أ ) السجق والمنتجات المماثلة ، وإن كانت مطبوخة (البند <span class="highlight">16.01</span>) ؛</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.2cm;">(ب) اللحوم والأحشاء والأطراف المطبوخة بأية طريقة ( مسلوقة أو منضجة بالبخار أو مشوية أو مقلية أو محمصة)، أو تم تجهيزها أو حفظها بأى من طرق التحضير أو الحفظ الأخر <span class="highlight">التهام</span> ترد في الفصل ، بما فيها تلك المحمصة في مزيج من اللبن والبيض والطحين أو مغطاة بمسحوق الخبز المحمص أو المضاف <span class="highlight">إليهــا</span> الكما أو المتبلة (مثلاً ، بالفلفل والملح) ، وكذلك عجائن الكبد (البند <span class="highlight">16.02</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">ويشمل هذا الفصل أيضاً اللحوم والأحشاء والأطراف الصالحة للإستهلاك البشرى ، وإن كانت مطهية، بشكل دقيق أو مسحوق .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">وتجب الملاحظة بأن اللحوم والأحشاء والأطراف المذكورة في هذا الفصل تبقى داخلة فيه، حتى وإن كانت معبأة في عبوات محكمة الغلق (مثل، اللحم المجفف المعبأ في علب معدنية ) . ومع ذلك، فإن المنتجات المعبأة في هذه الأوعية والتي قد تم تحضيرها أو حفظها بطرق أخر غير تلك المنصوص عليها في هذا الفصل، فإنها تتبع الفصل 16 .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">02.01</span> لحوم فصيلة الأبقار ، طازجــة أو مبــردة .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0201.10</span> – ذبائح كاملة وأنصاف ذبائح</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0201.20</span> – قطع أخر بعظامها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0201.30</span> – بدون عظام</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">يشمل هذا البند اللحوم الطازجة أو المبردة من فصيلة الأبقار الأليفة أو البرية المذكورة في البند <span class="highlight">01.02</span> .</p>
+    </div>
+    <div class="page-number-style">29</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">02.02</span> لحــوم فصيلة الأبقــار ، مجمــدة .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0202.10</span> – ذبائح كاملة وأنصاف ذبائح</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0202.20</span> – قطع أخر بعظامها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0202.30</span> – بدون عظام</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند اللحوم المجمدة من فصيلة الأبقار الأليفة أو البرية المذكورة في البند <span class="highlight">01.02</span> .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">02.03</span> لحوم فصيلة الخنازير ، طازجة أو مبردة أو مجمدة .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– طازجة أو مبردة :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0203.11</span> – – ذبائح كاملة وأنصاف ذبائح</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0203.12</span> – – أفخاذ وأكتاف وقطعها،بعظامها</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0203.19</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– مجمدة :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0203.21</span> – – ذبائح كاملة وأنصاف ذبائح</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0203.22</span> – – أفخاذ وأكتاف وقطعها، بعظامها</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0203.29</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند اللحوم الطازجة أو المبردة أو المجمدة من الخنازير الأليفة أو البرية . يشمل هذا البند أيضاً لحم الخنزير <span class="highlight">الذى</span> يتخلله دهن والشحوم الملتصق بها طبقة من اللحم .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">02.04</span> لحوم فصيلة الضأن أو الماعز ، طازجة أو مبردة أو مجمدة (+) :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0204.10</span> – ذبائح كاملة وأنصاف ذبائح حملان ، طازجة أو مبردة</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– لحوم ضأن أخر ، طازجة أو مبردة :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0204.21</span> – – ذبائح كاملة وأنصاف ذبائح</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0204.22</span> – – قطع أخر بعظامها</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0204.23</span> – – بدون عظام</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0204.30</span> – ذبائح كاملة وأنصاف ذبائح حملان ، مجمدة</p>
+    </div>
+    <div class="page-number-style">30</div>
+  </div>
+  
+
+</body>
+</html>

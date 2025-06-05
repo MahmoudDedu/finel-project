@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكتاب - الغلاف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2; /* Tailwind: bg-gray-100 */
+      direction: rtl;
+      font-family: 'Amiri', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm; /* Use min-height for pages with varying content length */
+      background: white; /* Tailwind: bg-white */
+      margin: 2rem auto; /* Tailwind: my-8 mx-auto */
+      padding: 2.5cm 2cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Tailwind: shadow-lg */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    /* General text styles from example, can be overridden by more specific ones */
+    .chapter-title-style { /* Renamed to avoid conflict if used differently than example */
+      font-size: 22pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .section-title-style { /* Renamed */
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+    }
+    .content-style p, .content-style div, .content-style li { /* Applied to paragraphs/divs within content */
+      font-size: 14pt;
+      line-height: 2;
+      text-align: justify;
+    }
+    .content-style p { /* Indent only paragraphs directly under content, not in lists etc. unless specified */
+        text-indent: 1cm;
+    }
+    .page-number-style {
+      position: absolute;
+      bottom: 2cm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12pt;
+    }
+    strong {
+      font-weight: bold;
+    }
+
+    /* Custom styles for the cover page elements */
+    .cover-top-header {
+      font-size: 14pt;
+      text-align: center;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-main-title {
+      font-size: 40pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+      margin-top: 1cm; /* Adjusted */
+      letter-spacing: 2px; /* Optional: for stretched look */
+    }
+    .cover-subtitle {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2cm;
+    }
+    .cover-volume-title {
+      font-size: 28pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .cover-description {
+      font-size: 16pt;
+      text-align: center;
+      margin-bottom: 2.5cm; /* Adjusted */
+    }
+    .cover-translation-note {
+      font-size: 12pt;
+      text-align: center;
+      margin-top: auto; /* Pushes to bottom if flex container */
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-authority-section {
+      font-size: 12pt;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-final-note {
+      font-size: 11pt; /* Slightly larger than 10pt for readability */
+      text-align: justify;
+      margin-top: 1cm; /* Spacing from elements above */
+      /* margin-bottom: 2cm; /* Ensure it's above page bottom if no page number */
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+    <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– لحوم ضأن أخر ، مجمدة :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0204.41</span> – – – ذبائح كاملة وأنصاف ذبائح</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0204.42</span> – – – قطع أخر بعظامها</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0204.43</span> – – – بدون عظام</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0204.50</span> – لحوم فصيلة الماعز</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند اللحوم الطازجة أو المبردة أو المجمدة من الضأن (أكباش و نعاج و حملان) ، ولحوم الماعز أو صغارها ، سواءً كانت أليفة أو برية .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.2cm; text-align: right;">ملاحظة البند الفرعي :</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البندان الفرعيان <span class="highlight">0204.10</span> و <span class="highlight">0204.30</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">لأغراض تطبيق البندين الفرعيين <span class="highlight">0204.10</span> و <span class="highlight">0204.30</span> ، فإن لحوم الحملان <span class="highlight">هى</span> اللحوم <span class="highlight">التى</span> يكون مصدرها الحيوانات من فصيلة الضأن <span class="highlight">التى</span> لا يزيد عمرها عن 12 شهراً. ويكون لحمها ذو تعريق وبنية رقيقين، وله لون أحمر وردى ومظهره ناعم . <span class="highlight">لايتجاوز</span> وزن الذبيحة منها 26 كج .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">02.05</span> لحــوم فصــائل الخيــول والحميــر والبغــال والنغــال ، طازجــة أو مبــردة أو مجمــدة .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند اللحوم الطازجة أو المبردة أو المجمدة من تلك الحيوانات الحية <span class="highlight">التى</span> تدخل في البند <span class="highlight">01.01</span>.</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.1cm; font-size: 12.5pt; text-align: right;"><span class="highlight">02.06</span> أحشــاء وأطــراف صالحــة للأكــل من فصــائل الأبقــار والخنــازيــر والضــأن والمــاعــز ، والخيــل والحميــر والبغــال والنغــال ، طازجــة أو مبــردة أو مجمــدة .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0206.10</span> – من فصيلة الأبقار ، طازجة أو مبردة</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– من فصيلة الأبقار ، مجمدة :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0206.21</span> – – – ألسنة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0206.22</span> – – – أكباد</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0206.29</span> – – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0206.30</span> – من فصيلة الخنازير ، طازجة أو مبردة</p>
+    </div>
+    <div class="page-number-style">31</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– من فصيلة الخنازير ، مجمدة :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0206.41</span> – – – أكباد</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0206.49</span> – – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0206.80</span> – غيرها ، طازجة أو مبردة</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0206.90</span> – غيرها ، مجمدة</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height: 1.8;">تشمل الأحشاء والأطراف الصالحة للأكل في هذا البند <span class="highlight">ما يلى :</span> الرؤوس وقطعها ( بما فيها الأذنين ) ، والأقدام والأذناب والقلوب والضرع والأكباد ، والكلى ، (البنكرياس والغدد الصماء ) ، المخ والرئتين والحلقوم والحواشى الغليظة والرقيقة ، الطحال واللسان والأغشية الدهنية المحيطة بالأمعاء والنخاع الشوكى والجلد الصالح للأكل والأعضاء التناسلية (مثل الرحم والمبيض والخصى) والغدد الدرقية والغدد النخامية . لأجل إتباع <span class="highlight">المبادىء</span> الواجب تطبيقها لتبنيد الأحشاء والأطراف ، أنظر الإعتبارات العامة لهذا الفصل .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 12pt; text-align: right;"><span class="highlight">02.07</span> لحــوم وأحشــاء وأطــراف صالحــة للأكــل من الطيــور الداجنــة المذكــورة في البنــد <span class="highlight">01.05</span> ، طازجــة أو مبــردة أو مجمــدة .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– من ديوك ودجاجات من فصيلة جالوس دومستيكاس</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.11</span> – – غير مقطعة لأجزاء، طازجة أو مبردة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.12</span> – – غير مقطعة لأجزاء، مجمدة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.13</span> – – قطع وأحشاء وأطراف، طازجة أو مبردة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0207.14</span> – – قطع وأحشاء وأطراف، مجمدة</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– من ديوك ودجاجات رومية "دبش " :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.24</span> – – غير مقطعة لأجزاء، طازجة أو مبردة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.25</span> – – غير مقطعة لأجزاء، مجمدة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.26</span> – – قطع وأحشاء وأطراف، طازجة أو مبردة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0207.27</span> – – قطع وأحشاء وأطراف، مجمدة</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– من بط، أوز أو دجاج غينيا " غرغر " :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.32</span> – – غير مقطعة لأجزاء، طازجة أو مبردة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.33</span> – – غير مقطعة لأجزاء، مجمدة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.34</span> – – أكباد دسمة ، طازجة أو مبردة</p>
+    </div>
+    <div class="page-number-style">32</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0207.35</span> – – غيرها، طازجة أو مبردة</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0207.36</span> – – غيرها ، مجمدة</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند فقط اللحوم الطازجة أو المبردة أو المجمدة وأحشاء وأطراف الطيور الداجنة الحية ، التي تدخل في البند <span class="highlight">01.05</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm; line-height: 1.8;">إن أحشاء وأطراف الطيور الداجنة ذات الأهمية في التجارة الدولية <span class="highlight">هى</span> أكباد الدجاج أو الأوز أو البط . <span class="highlight">وهى</span> تشمل أكباد الأوز أو البط الدسمة ، <span class="highlight">والتى</span> يمكن تمييزها عن غيرها من الأكباد بكبر حجمها وثقل وزنها، وإكتنازها ويكونها غنية بالدهن ؛ ويختلف لونها بين البنيج المائل إلى الأبيض إلى الكستنائى الفاتح ، بينما يكون لون الأكباد الأخر عادة أحمر غامق أو فاتح .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 12.5pt; text-align: right;"><span class="highlight">02.08</span> لحــوم وأحشـــاء وأطــراف أخـــر صالحـــة للأكـــل ، طازجـــة أو مبـــردة أو مجمـــدة .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0208.10</span> – من أرانب أليفة أو برية</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0208.20</span> – من أفخاذ ضفادع</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0208.30</span> – من الحيوانات العليا (الرئيسيات) .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0208.40</span> – من الحيتان و الدلافين و الدلافين الصغيرة الحجم "خنازير البحر" (ثديات من فصيلة الحيتان ، من خرفان البحر و<span class="highlight">الأطم</span> (ثديات من فصيلة الخيلانيات أو أبقـار البحــر "Sirenia") .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;"><span class="highlight">0208.50</span> – من الزواحف (بما فيها الأفاعي و السلاحف ) .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.2cm;"><span class="highlight">0208.90</span> – غيرها .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند لحوم وأطراف وأحشاء الحيوانات الداخلة في البند <span class="highlight">01.06</span> ، بشرط أن تكون صالحة للإستهلاك البشرى (مثل، الأرانب الأليفة والأرانب البرية، الضفادع والرنة والقندس والحوت والسلاحف) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 11pt; text-align: right; line-height: 1.5;"><span class="highlight">02.09</span> شحم ودهن خنزير صرف، ودهن الطيور الداجنة، غير مستخلص بالأذابة <span class="highlight">أوبطرق</span> الإستخلاص الأخر، طــازجــاً أو مبــرداً أو مجمــداً أو مملحــاً أو في ماء مملح أو مجففــاً أو مدخنــاً.</p>
+    </div>
+    <div class="page-number-style">33</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يقتصر شحم الخنزير في هذا البند على الشحم <span class="highlight">الخالى</span> من اللحم الأحمر ؛ ويدخل مثل هذا الشحم في هذا البند وإن كان صالحاً للإستعمال <span class="highlight">الصناعى</span> فقط . أما إذا تخللته طبقات من اللحم أو كانت ملتصقة به طبقة من اللحم وكان معداً لأن يؤكل بحالته هذه ، فإنه يدخل في البند <span class="highlight">02.03</span> أو البند <span class="highlight">02.10</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمل هذا البند ، على وجه الخصوص ، الشحم الموجود أساساً حول أحشاء الخنزير <span class="highlight">والذى</span> عندما يكون مستخلصاً بالأذابة ، أو بطرق الإستخلاص الأخر ، فإنه يخضع للبند (<span class="highlight">15.01</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">ويدخل فــى هــذا البند أيضاً دهن الطيور الداجنة الأليفة أو البرية (مثل الأوز) ، غير المستخلصة بالإذابة أو بطرق الإستخلاص الأخر ؛ ويستثنى من هذا الدهن إذا كان مذاباً أو مستخلصاً بطرق الإستخلاص الأخر (البند <span class="highlight">15.01</span>) . ويستثنى من هذا البند شحم الثدييات البحرية (الفصل 15) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 10.5pt; text-align: right; line-height:1.4;"><span class="highlight">02.10</span> لحــوم وأحشــاء وأطــراف صالحــة للأكــل، مملحــة أو في ماء مملح، أو مجففــة أو مدخنــة؛ دقيــق ومسحــوق صالــح للأكــل، من لحــوم أو أحشــاء أو أطــراف .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– لحوم فصيلة الخنازير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0210.11</span> – – أفخاذ وأكتاف وقطعها ، بعظامها</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0210.12</span> – – صدور يتخللها شحم ، وقطعها</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0210.19</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– لحوم فصيلة الأبقار</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0210.20</span> – – غيرها ، بما فيها دقيق ومساحيق صالحة للأكل ، من لحوم أو أحشاء أو أطراف</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– من الرئيسيات (الحيوانات العليا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0210.91</span> – – من الحيتان و الدلافين و الدلافين الصغيرة "خنازير البحر" (ثديات بحرية من فصيلة الحيتان " <span class="highlight">سيتيسيا Cetacea</span> ") من خرفان البحر والأطم ( ثديات من فصيلة الخيلانيات أبقار البحر "<span class="highlight">Sirenia</span>") .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0210.93</span> – – من الزواحف (بما فيها الأفاعي و السلاحف ) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0210.99</span> – – غيرها .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm; line-height:1.8;">يطبق هذا البند على جميع أنواع اللحوم والأحشاء والأطراف الصالحة للأكل والتي تم تحضيرها كما هو مبين في هذا البند ، عدا شحم الخنزير الصرف ودهن الطيور الداجنة ، غير المستخلص بالإذابة أو بطرق الإستخلاص</p>
+    </div>
+    <div class="page-number-style">34</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.8; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">الأخر (البند <span class="highlight">02.09</span>) . ويشمل هذا البند شحم الخنزير <span class="highlight">الذى</span> يتخلله طبقات من اللحم ، والشحم الملتصق به طبقة من اللحم ، بشرط أن تكون محضرة كما هو مبين في هذا البند .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">إن اللحوم المملحة أو المجففة ( بما فيها المنزوع ماؤها أو المجففة بالتجميد ) أو المدخنة ( مثل ، لحم الخنزير المقدد ، لحم الأفخاذ ، لحم الأكتاف ) إذا كانت مغلفة <span class="highlight">بالعصارين</span> أو المعدة أو المثانات أو الجلود أو الأغلفة المماثلة ( طبيعية أو إصطناعية ) ، تدخل في هذا البند بشرط ألا يكون قد سبق تقطيعها أو فرمها وخلطها مع مكونات أخر (البند <span class="highlight">16.01</span>) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">إن دقيق ومسحوق اللحم أو الأحشاء والأطراف الصالحة للأكل تدخل <span class="highlight">أيضاً</span> في هذا البند؛ ويستثنى دقيق ومسحوق اللحم أو الأحشاء والأطراف غير الصالحة للإستهلاك <span class="highlight">البشرى</span> (لتغذية الحيوانات، مثلاً) (البند <span class="highlight">23.01</span>)<span class="highlight">0</span></p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">إن الأحكام الواردة في شرح البند <span class="highlight">02.06</span> ، مع تعديل ما يجب تعديله ، تطبق على الأحشاء والأطراف الصالحة للأكل الداخلة في هذا البند .</p>
+    </div>
+    <div class="page-number-style">35</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: center; margin-top: 0.5cm; margin-bottom: 0.2cm;">الفصل الثالث</h2>
+    <p class="section-title-style" style="font-size: 14pt; text-align: center; margin-bottom: 0.5cm; line-height:1.6;">
+      أسماك وقشريات ، رخويات وغيرها من اللافقريات المائية
+    </p>
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7;">
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">ملاحظات الفصل :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">1 – لايشمل هذا الفصل :</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">أ – الثدييات البحرية (البند <span class="highlight">01.06</span>) ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">ب – لحوم الثدييات البحرية البند <span class="highlight">01.06</span> (البند <span class="highlight">02.08</span> أو البند <span class="highlight">02.10</span>) ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">ج – الأسماك ( بما فيها أكبادها وبيضها وغدد التذكــر فيها ) والقشريات والرخويات واللافقريات المائية الأخر ، الميتة وغيــر الصالحة للإستهلاك البشرى ، إما بسبب جنسها أو بسبب حالتها المقدمة بها (الفصل 5 ) ؛ دقيق ومسحوق وكريات مكتلة من الأسماك أو القشريات أو الرخويات أو اللافقريات المائية الأخر ، غير الصالحة للإستهلاك البشرى (البند <span class="highlight">23.01</span>) ؛</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">د – <span class="highlight">الخيارى</span> ( كافيار ) أو ابداله المتحضرة من بيض السمك ( البند <span class="highlight">16.04</span>) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; margin-right:1em;">2 – يقصد بعبارة " كريات مكتلة Pellets " في هذا الفصــل ، المنتجــات المقدمة بشكل حبات <span class="highlight">إسطوانية</span> أو كروية ..إلخ، المكتلة إما مباشرة بالضغط البسيط أو بإضافة كمية قليلة من مادة رابطة .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;">إعتبــارات عــامـــة</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يشمــل هذا الفصل جميع الأسماك والقشريات والرخويات واللافقريات المائية الأخرى، سواء كانت حية أو ميتة، <span class="highlight">والتى</span> تقدم للإستهلاك المباشر، أو للأغراض الصناعية (مثل التعليب ..إلخ)، لغرض الإكثار أو العرض في أحواض <span class="highlight">،إلخ</span>، بإستثناء الأسماك الميتة (بما فيها أكبادها وبيضها وغدد التذكير فيها) والقشريات والرخويات واللافقريات المائية الأخر غير الصالحة أو غير الملائمة للإستهلاك البشرى إما بسبب جنسها أو <span class="highlight">بسب</span> حالتها المقدمة بها (الفصل الخامس) .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يقصد بعبارة " مبردة " أن درجة حرارة منتج ما قد تم تخفيضها ، بصورة عامة الى حوالى درجة صفر مئوية ، دون أن يتجمد المنتج . ويقصد بعبارة " مجمدة " أن المنتج تم تبريده الى ما دون درجة تجمده حتى يتجمد كليــاً .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">ويشمل هذا الفصل أيضاً بيض الأسماك الصالح للأكل، أى، بيض الأسماك الذى لايزال مغلفاً بغشاء المبيض، غير محضر أو محفوظ ، أو محضر أو محفوظ بالطرق المنصوص عنها في هذا الفصل فقط . أما البيض الصالح للأكل المحضر أو المحفوظ بطرق أخر ، وإن كان مغلفــاً بغشـــاء المبيض ، فإنه يدخل في البند <span class="highlight">16.04</span>.</p>
+    </div>
+    <div class="page-number-style">36</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.3cm; font-size: 14pt; text-align: center;">التمييز بين الأصناف الداخلة في هذا الفصل وتلك الداخلة في الفصل 16</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">يقتصر هذا الفصل على الأسماك (بما فيها أكبادها وبيضها وغدد التذكير فيها) والقشريات والرخويات واللافقريات المائية الأخر في الحالات المبينة في بنود هذا الفصل . وفقاً لهذا الحكم ، تبقى هذه الأصناف داخلة في هذا الفصل، وإن كانت مقطعة أو بشكل شرائح أو مفرومة ..إلخ. وبالإضافة الى ذلك، فإن المخاليط أو توابل من المنتجات المختلفة المذكورة في بنود هذا الفصل (مثل ، الأسماك من البنود <span class="highlight">03.02</span> الى <span class="highlight">03.04</span> إذا وردت مخلوطة مع القشريات من البند <span class="highlight">03.06</span>) تبقى داخلة من هذا الفصل .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">ومن جهة أخرى، فإن الأسماك والقشريات والرخويات واللافقريات المائية الأخر تدخل في الفصل 16 إذا كانت مطبوخة أو محضرة أو محفوظة بطرق أخر غير منصوص عليها في هذا الفصل (مثل ، شرائح السمك المغطاة بالمعجنات <span class="highlight">والمخبو ض</span> في مزيج من اللبن والبيض والطحين أو المغطاة بمسحوق من الخبز المحمص ، الأسماك المطبوخة) ؛ ومع ذلك، فيجب ملاحظة، أن السمك المدخن، <span class="highlight">والذى</span> يمكن أن يكون قد تم طبخه أثناء أو قبل عملية التدخين، والقشريات بقشورها <span class="highlight">التى</span> تم سلقها في الماء أو إنضاجها بالبخار بطريقة بسيطة ، تبقى داخلة في البندين <span class="highlight">03.05</span> و <span class="highlight">03.06</span> على التوالى. وعلى هذا ، فالدقيق والمسحوق والكريات المكثفة المتحصل عليها من الأسماك أو من القشريات أو من الرخويات أو اللافقريات المائية الأخر، المطبوخه، تبقى داخلة في البنــود <span class="highlight">03.05</span> ، <span class="highlight">03.06</span>، <span class="highlight">03.07</span> على التوالى .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm;">ويجب أيضاً ملاحظة أن الأسماك والقشريات والرخويات واللافقريات المائية الأخر المشمولة في هذا الفصل، تبقى داخلة فيه حتى وإن تم تهيئتها في أوعية محكمة الغلق (مثل، السالمون المدخن في علب معدنية ). ومع ذلك، <span class="highlight">ففى</span> معظم الحالات، فإن المنتجات المهيأة في هذه الأوعية التي تم تحضيرها أو حفظها بطرق أخر غير تلك المذكورة في بنود هذا الفصل ،تبعاً لذلك ، تخضع للفصل 16 .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.1cm;">وبالإضافة الى الإستثناءات المشار إليها أعلاه ، يستثنى من هذا الفصل أيضاً :</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">أ – الثدييات البحرية (البند <span class="highlight">01.06</span>) ولحومها (البند <span class="highlight">02.08</span> أو <span class="highlight">02.10</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ب – لحوم الثدييات البحرية البند <span class="highlight">01.06</span></p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.05cm;">ج – نفايات الأسماك وبيضها وغدد التذكير غير الصالحة للأكل (مثل ، بيض سمك القد المملح <span class="highlight">والذى</span> يستعمل كطعم لصيد الأسماك) (البند <span class="highlight">05.11</span>) .</p>
+      <p style="text-indent: 1cm; margin-right:1em; margin-bottom: 0.1cm;">د – دقيق ومسحوق وكريات مكتلة من الأسماك أو القشريات أو الرخويات أو اللافقريات المائية الأخر ، غير الصالحة للإستهلاك البشرى (البند <span class="highlight">23.01</span>) .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.8cm; margin-bottom: 0.1cm; font-size: 14pt; text-align: right;"><span class="highlight">03.01</span> أسمــاك حيـــة (+) .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;"><span class="highlight">0301.10</span> – أسماك الزينة</p>
+    </div>
+    <div class="page-number-style">37</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.1cm;">– أسماك حية أخر :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0301.91</span> – – سمك التروتا ( سالموتروتا ، أونكورنكس مايكس ، أونكورنكس كلاركي ، أونكورنكس أكوابونيتا أونكورنكس جيلاى، أونكورنكس أباتشى ، أونكورنكس كريزوجاستر)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0301.92</span> – – سمك الأنكليس (من نوع أنجويلا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0301.93</span> – – سمك الشبوط</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.2cm;"><span class="highlight">0301.99</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يشمل هذا البند جميع الأسماك الحية، مهما كان الغرض من إستعمالها (مثل أسماك الزينة) . إن الأسماك الداخلة في هذا البند تنقل عادة في أوعية مناسبة (أحواض العرض، أحواض السمك ..إلخ) <span class="highlight">والتى</span> يمكن أن تحفظ فيها حية في ظروف مشابهة لتلك الموجودة في بيئتها الطبيعية .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top:0.5cm; margin-bottom: 0.2cm; text-align: right;">ملاحظة البند الفرعي :</p>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.2cm; text-align: right;">البند الفرعي <span class="highlight">0301.10</span> .</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">يقصد بعبارة " أسماك الزينة " ، الأسماك الحيــة ، <span class="highlight">التى</span> تستعمل عادة لأغراض الزينة، بسبب ألوانها أو أشكالها، وخصوصاً ما ترد في أحواض العرض .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 11.5pt; text-align: right; line-height:1.5;"><span class="highlight">03.02</span> أسمـاك طازجـة أو مبـردة ، عـدا شرائـح الأسمـاك ولحـوم الأسمـاك الأخـر المذكـورة في البنـد <span class="highlight">03.04</span> .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– أسماك فصيلة السالمون ، بإستثناء الأكباد والبيض وغدد التذكير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.11</span> – – أسماك التروتا ( سالموتروتا ، أونكورنكس مايكس ، أونكورنكس كلاركي ، أونكورنكس أكوابونيتا ، أونكورنكس جيلاى، أونكورنكس أباتشى أونكورنكس كريزوجاستر)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.6;"><span class="highlight">0302.12</span> – – سالمون المحيط الهادئ ( أونكورنكس نيركا ، أونكورنكس جربوشا ، أونكورنكس كيتا ، أونكورنكس تشاويتشا ، أونكورنكس كيسوتش ، أونكورنكس ماسو ، أونكورنكس روديوراس ) ، سالمون المحيط الأطلنطى (سالمون سالار) و سالمون الدانوب (هوكوهوكو)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0302.19</span> – – غيرها</p>
+    </div>
+    <div class="page-number-style">38</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 12pt; line-height: 1.6; padding-top:0.5cm;">
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.5;">أسماك مفلطحة (<span class="highlight">بلورونيكتيداى، بوثيداى، سينوجلوسيداى، سوليداى، سكوفثالميداى و سيثاريداى</span>)، بإستثناء الأكباد والبيض وغدد التذكير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.5;"><span class="highlight">0302.21</span> – – أسماك <span class="highlight">القنــدر</span> (<span class="highlight">رينهاردتيوس هيبوجلوسويدس</span> ، أو <span class="highlight">هيبــوجلوس</span> هيبوجلوسوس أو هيبوجلوسوس ستينوليبس )</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.22</span> – – أسماك هوشع (بلورونكتس بلاتيسا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.23</span> – – أسماك موسى (من نوع سولا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0302.29</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.5;">– أسماك تونة (من نوع ثونوس ) <span class="highlight">أوبونيت</span> مخطط البطن ( <span class="highlight">أبوثونوس</span> " كاستو وأنوس " بيلاميس ) ، بإستثناء الأكباد والبيض وغدد التذكير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.31</span> – – أسماك تونة بيضاء (ثونوس الألونجا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.32</span> – – أسماك تونة ذات زعانف صفراء (ثونوس الباكارس)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.33</span> – – أسماك بونيت مخطط البطن (سكيب جاك)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.34</span> – – أسماك تونة ذات العيون المنتفخة (ثونوس أوبسوس) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.35</span> – – أسماك تونة ذات زعانف زرقاء (ثونوس فينوس) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.36</span> – – أسماك تونة ذات زعانف زرقاء الجنوبية (ثونوس ماكوي) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0302.39</span> – – غيرها</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.05cm;"><span class="highlight">0302.40</span> – أسماك الرنجة (كلوبيا هارنجس، وكلوبيا بالاسى)، بإستثناء الأكباد والبيض وغدد التذكير</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.1cm; line-height:1.5;"><span class="highlight">0302.50</span> – أسماك القد (جادوس موروآ، جادوس أوجاك ، جادوس ماكروسيفالوس)، بإستثناء الأكباد والبيض وغدد التذكير</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– أسماك أخر ، بإستثناء الأكباد والبيض وغدد التذكير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.5;"><span class="highlight">0302.61</span> – – أسماك السردين ( ساردينيا بيلكاردوس وساردينوبس ) ، وساردينلا ( من نوع ساردينلا)، رنجة صغيرة أو اسبرط (سبراتوس سبراتوس)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.62</span> – – أسماك الحدوق (ميلانوجراموس أيجليفينوس)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.63</span> – – سمك أسود (بولاكيوس فيرنس)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.5;"><span class="highlight">0302.64</span> – – سمك <span class="highlight">أسقمري</span> " ماكريل " (سكومبر سكومبرس ، سكومبر أوسترالاسيكوس ، سكومبر جابونيكوس )</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.65</span> – – كلاب البحر وغيرها من أسماك القرش</p>
+    </div>
+    <div class="page-number-style">39</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="font-size: 13pt; line-height: 1.7; padding-top:0.5cm;">
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.66</span> – – سمك الأنكليس (من نوع إنجويلا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0302.69</span> – – غيرها</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm;"><span class="highlight">0302.70</span> – أكباد وبيض وغدد تذكير</p>
+      <p style="text-indent: 1cm; margin-bottom: 0.2cm; line-height:1.8;">يشمل هذا البند السمك، طازج أو مبرد ، سواءً كان كاملاً أو بدون رؤوس أو أحشاء ، أو قطعاً بعظامها . ومع ذلك ، فإن هذا البند لايشمل شرائح السمك وغيرها من لحوم الأسماك المذكورة في البند <span class="highlight">03.04</span> . وقد تكون الأسماك معبأة مع الثلج أو الملح أو رشها بماء مملح للحفظ المؤقت أثناء النقل . إن الأسماك المضاف إليها قليل من السكر أو المعبأة مع بعض أوراق الغار تبقى داخلة في هذا البند. إن جلود الأسماك الصالحة للأكل وأكبادها وبيضها وغدد التذكير فيها ، طازجة أو مبردة، تدخل أيضاً في هذا البند.</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.1cm; font-size: 11pt; text-align: right; line-height:1.5;"><span class="highlight">03.03</span> أسمــاك مجمــدة ، بإســـتثناء شرائـــح الأســـماك وغيرهـــا من لحـــوم الأســـماك المذكـــورة في البنـــد <span class="highlight">03.04</span> .</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.6;">– سالمون المحيط الهادى (من نوع أونكورنكس نيركا ، أونكورنكس جوربوشا، أونكورنكس كيتا، أونكورنكس تشاويتشا، أونكورنكس كيســوتش، أونكورنكس ماسو، أونكورنكس روديورس، بإستثناء الأكباد والبيض وغدد التذكير</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0303.10</span> – – سالمون سوكاي (سالمون أحمر) (أونكورنكس نيركا) .</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0303.11</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm;">– أسماك <span class="highlight">أخــر</span> من فصيلة السالمون بإستثناء الأكباد والبيض وغدد التذكير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.6;"><span class="highlight">0303.21</span> – – أسماك تروتا (سالمو تروتا ، أونكورنكس مايكس ، أونكورنكس كــلاركــى ، أونكورنكس أكــوابــونيـــتا ، أونكورنكس جيــلاى ، أونكورنكس كريزوجاستر)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0303.22</span> – – سالمون الأطلنطى (سالموسالار) وسالمون الدانوب (هوكوهوكو)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.1cm;"><span class="highlight">0303.29</span> – – غيرها</p>
+      <p style="text-indent: 1cm; margin-right: 2em; margin-bottom: 0.05cm; line-height:1.6;">– أسماك مفلطحة (<span class="highlight">بلورونيكتيــداى ، بــوثيــداى ، ســينو جلوســيداى</span> ، سوليداى ، سكوفثالميداى، وسيثاريداى)، بإستثناء الأكباد والبيض وغدد التذكير :</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm; line-height:1.6;"><span class="highlight">0303.31</span> – – سمك <span class="highlight">القنــدر</span> (<span class="highlight">رينهاردتيوس هيبوجلوسويدس</span> ، <span class="highlight">هيبوجلوســوس</span> هيبوجلوسوس ، هيبوجلوسوس ستينوليبس)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0303.32</span> – – سمك هوشع (بلورونكتس بلاتيسا)</p>
+      <p style="text-indent: 2cm; margin-right: 3em; margin-bottom: 0.05cm;"><span class="highlight">0303.33</span> – – سمك موسى (من نوع سولا)</p>
+    </div>
+    <div class="page-number-style">40</div>
+  </div>
+  
+
+</body>
+</html>

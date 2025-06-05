@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكتاب - الغلاف</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2; /* Tailwind: bg-gray-100 */
+      direction: rtl;
+      font-family: 'Amiri', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm; /* Use min-height for pages with varying content length */
+      background: white; /* Tailwind: bg-white */
+      margin: 2rem auto; /* Tailwind: my-8 mx-auto */
+      padding: 2.5cm 2cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Tailwind: shadow-lg */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    /* General text styles from example, can be overridden by more specific ones */
+    .chapter-title-style { /* Renamed to avoid conflict if used differently than example */
+      font-size: 22pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .section-title-style { /* Renamed */
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+    }
+    .content-style p, .content-style div, .content-style li { /* Applied to paragraphs/divs within content */
+      font-size: 14pt;
+      line-height: 2;
+      text-align: justify;
+    }
+    .content-style p { /* Indent only paragraphs directly under content, not in lists etc. unless specified */
+        text-indent: 1cm;
+    }
+    .page-number-style {
+      position: absolute;
+      bottom: 2cm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12pt;
+    }
+    strong {
+      font-weight: bold;
+    }
+
+    /* Custom styles for the cover page elements */
+    .cover-top-header {
+      font-size: 14pt;
+      text-align: center;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-main-title {
+      font-size: 40pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1cm;
+      margin-top: 1cm; /* Adjusted */
+      letter-spacing: 2px; /* Optional: for stretched look */
+    }
+    .cover-subtitle {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2cm;
+    }
+    .cover-volume-title {
+      font-size: 28pt; /* Increased size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5cm;
+    }
+    .cover-description {
+      font-size: 16pt;
+      text-align: center;
+      margin-bottom: 2.5cm; /* Adjusted */
+    }
+    .cover-translation-note {
+      font-size: 12pt;
+      text-align: center;
+      margin-top: auto; /* Pushes to bottom if flex container */
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-authority-section {
+      font-size: 12pt;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 1.5cm; /* Adjusted */
+    }
+    .cover-final-note {
+      font-size: 11pt; /* Slightly larger than 10pt for readability */
+      text-align: justify;
+      margin-top: 1cm; /* Spacing from elements above */
+      /* margin-bottom: 2cm; /* Ensure it's above page bottom if no page number */
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="page">
+    <div class="cover-top-header">النظام المنسق لوصف وترميز السلع</div>
+    <div class="cover-main-title">شروح التفسيرية</div>
+    <div class="cover-subtitle">النسخة الثالثة ( 2002 )</div>
+    <div class="cover-volume-title mt-[2cm] mb-[0.5cm]">المجلد الأول</div>
+    <div class="cover-description mb-[2cm]">الأقسام من القسم الأول إلى القسم السادس<br>الفصول 1 لغاية 29</div>
+
+    <div style="flex-grow: 1;"></div> <div class="cover-translation-note mb-[2cm]">تمت الترجمة في دمشق 6/6/2005</div>
+    <div class="cover-authority-section mb-[2cm]">
+      الجمهورية العربية السورية<br>
+      مديرية الجمارك العامة<br>
+      مديرية الدراسات والتدقيق
+    </div>
+    <div class="cover-final-note">
+      <strong>ملاحظة:</strong> إن هذه النسخة هي تجريبية غير قابلة للتداول الرسمي أعدت <span class="highlight">بإنتظار</span> تلقي الملاحظات بشأنها لدراستها وإصدار النسخة النهائية .
+    </div>
+  </div>
+  <div class="page">
+    <h1 class="chapter-title-style" style="font-size: 20pt; margin-bottom: 0.8cm;">القواعد العامة لتفسير النظام المنسق</h1>
+    <h2 class="section-title-style" style="font-size: 16pt; margin-bottom: 0.5cm;">تتبع المبادئ التالية عند تبنيد السلع في جدول التعريفة</h2>
+    <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: right; margin-bottom: 0.5cm;">القاعدة الأولى</h3>
+    <div class="content-style">
+      <p style="text-indent: 1cm;">ليس لعناوين الأقسام أو الفصول أو الفصول الفرعية سوى قيمة إرشادية ؛ أما تبنيد السلع فيجب أن يتحدد قانوناً تبعاً لنصوص البنود والملاحظات الخاصة بالأقسام أو الفصول ، وتبعاً للقواعد التالية ، بشرط ألا تتعارض هذه القواعد مع نصوص البنود والملاحظات .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.7cm; margin-bottom: 0.3cm; font-size: 14pt;">ملاحظة تفسيرية :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">1 - يبين جدول النظام المنسق ، وفقاً لترتيب خاص ، السلع المتداولة في التجارة الدولية ، وهو يجمع هذه السلع في أقسام وفصول فرعية ذات عناوين تبين على قدر الإمكان نوع المنتجات التي تشملها ، إلا أنه في كثير من الحالات فقد كان من المحال شمول جميع الأصناف أو ذكرها في العناوين، نظراً لتنوعها وتعددها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">2 - لذلك ، فإن القاعدة الأولى تبدأ بالنص على أنه " ليس للعناوين سوى قيمة إرشادية " وبالتالي فإنه لا يترتب عليها أي أثر قانوني عند التبنيد .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">3 - ينص الجزء الثاني من القاعدة على أن التبنيد يحدد كما يلي :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">( أ ) تبعاً لنصوص البنود وكذلك أى من ملاحظات الأقسام والفصول ذات العلاقة ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">(ب) عند الاقتضاء تبعاً لأحكام القواعد الثانية والثالثة والرابعة والخامسة ما لم ينص على خلاف ذلك في نصوص البنود أو ملاحظات الأقسام أو الفصول .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">4 - أن الأحكام الواردة في الفقرة 3 ( أ ) أعلاه تحمل حجية ذاتية مسلم بها فكثير من السلع تبند في جدول النظام المنسق دون حاجة الى الرجوع للقواعد التفسيرية ( مثال ذلك : الخيول الحية البند <span class="highlight">01.01</span> ، منتجات الصيدلة المحددة في الملاحظة الرابعة من الفصل الثلاثين (البند <span class="highlight">30.06</span>) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">5 - في الفقرة 3 (ب) أعلاه ، يقصد بعبارة " ما لم ينص على خلاف ذلك في نصوص البنود أو الملاحظات " التوضيح دون لبس أن نصوص البنود وملاحظات الأقسام أو الفصول تسمو على ما عداها عند التبنيد ، و هذا يعني أن لها الإعتبار الأول في التبنيد . فمثلاً، تنص ملاحظات الفصل الواحد والثلاثون على أن بنوداً معينة تشمل أصناف محددة فقط وبالتالي فإنه لايمكن توسيع نطاق هذه البنود لتشمل أصنافاً كان يمكن أن تبند فيها بمقتضى أحكام القاعدة الثانية (ب) .</p>
+      <div style="font-size: 12pt; text-align: left; margin-top: 1cm;">التعديل الخامس فبراير 1998</div>
+    </div>
+    <div class="page-number-style">1</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: right !important; margin-bottom: 0.5cm;">القاعدة الثانية</h2>
+    <div class="content-style">
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.5cm; margin-bottom: 0.3cm; font-size: 14pt;">ملاحظة تفسيرية :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">( أ ) إن كل إشارة الى صنف ما في بند معين تشمل هذا الصنف وإن كان غير كامل أو غير تام الصنع بشرط أن تتوافر فيه، بحالته التي يقدم بها الصفات الأساسية للصنف الكامل أو التام الصنع . وتشمل هذه الإشارة كذلك الصنف الكامل أو التام الصنع (أو الذي يعتبر في حكم الصنف الكامل أو التام الصنع بمقتضى أحكام هذه القاعدة)، سواء قدم مفككاً أو غير مجمع .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.5cm;">(ب) إن كل إشارة الى مادة ما في بند معين تشمل هذه المادة سواء كانت <span class="highlight">صرفه</span> أو مخلوطة أو مشتركة مع مواد أخر . وكذلك فإن أية إشارة إلى سلعة ما من مادة معينة تشمل هذه السلعة المصنوعة كلياً أو جزئياً من هذه المادة . وتبند هذه المنتجات المخلوطة أو المركبة وفقاً للمبادئ المنصوص عليها في القاعدة ( الثالثة ) .</p>
+
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: right; margin-bottom: 0.5cm; margin-top:1cm;">القاعدة الثانية ( أ )</h3>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.3cm; font-size: 14pt;">أصناف غير كاملة أو غير تامة الصنع</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">1 - إن الجزء الأول من هذه القاعدة يوسع نطاق أى بند يشير الى صنف معين، بحيث لايشمل الصنف الكامل فحسب بل يشمل أيضاً الصنف غير الكامل أو غير تام الصنع، بشرط أن تتوافر فيه بحالته التي يقدم بها الصفة الأساسية للصنف الكامل أو التام الصنع.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">2 - تنطبق أحكام هذه القاعدة أيضاً على الأشكال الأولية " الغفل " ما لم تكن هذه الأصناف مذكورة تحديداً في بند خاص يقصد بعبارة " الغفل " الأصناف غير الجاهزة للإستعمال المباشر ذات الشكل التقريبي أو الخطوط الرئيسية للصنف أو الجزء التام الصنع أو التي يمكن أن تستخدم فقط ، إلا في حالات إستثنائية ، لإستكمال عملية تصنيعها الى أصناف أو أجزاء تامة الصنع (مثل ، الأشكال الأولية للقناني من لدائن التي تمثل منتجات وسيطة ذات شكل أنبوبي، أحد طرفيها مغلق والآخر مفتوح وملولب، لإحكام عملية الإغلاق ، الجزء أسفل الطرف الملولب يكون معداً لأن يمدد إلى الحجم أو الشكل المطلوبين مثل ، الأشكال الأولية للقوارير و هي منتجات وسيطة أنبوبية الشكل مسدودة من جهة و مفتوحة من جهة أخرى و ملولبة الأعناق ليتم إغلاقها بسدادة ملولبة (محلزنة) الفوهة ، صمم القسم غير الملولب منها ليتمدد لاحقاً و يتخذ شكل و حجم القوارير المستخدمة في صناعة المشروبات الغازية ، معدة للصناعة) . أما المنتجات نصف المصنعة و التي ليس لها بعد الشكل الأساسي للأصناف التامة الصنع (مثل القضبان والأقراص والأنابيب .. إلخ) فإنها لا تعتبر أشكالاً أولية " غفل " .</p>
+    </div>
+    <div class="page-number-style">2</div>
+  </div>
+  <div class="page">
+    <div class="content-style">
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top:0cm;">3 - في ضوء نطاق بنود الأقسام من 1 الى 4 فإن هذا الجزء من القاعدة لا ينطبق عادة على منتجات تلك الأقسام.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">4 - هناك حالات عديدة تشملها هذه القاعدة قد ذكرت في الإعتبارات العامة للأقسام أو الفصول (مثل، القسم السادس عشـر ، والفـصول <span class="highlight">61</span> ، <span class="highlight">62</span> ، <span class="highlight">86</span> ، <span class="highlight">87</span> ، <span class="highlight">90</span>) .</p>
+      <div style="font-size: 12pt; text-align: left; margin-top: 0.5cm; margin-bottom: 0.5cm;">التعديل الخامس فبراير 1998</div>
+
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: right; margin-bottom: 0.5cm; margin-top:0.5cm;">القاعدة الثانية ( أ )</h3>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.3cm; font-size: 14pt;">(الأصناف المقدمة غير مجمعة أو مفككة )</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">5 - ينص الجزء الثاني من هذه القاعدة على انه إذا قدمت الأصناف الكاملة أو التامة الصنع مفككه أو غير مجمعة ، فيجب أن يطبق عليها ذات البند المطبق على الأصناف المجمعة . وعندما تقدم السلع مفككة أو غير مجمعة فعادة يكون ذلك لأسباب تتعلق بالتعبئة أو النقل والمناولة أو الشحن .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">6 - تطبق هذه القاعدة أيضاً على الأصناف غير الكاملة أو غير تامة الصنع إذا قدمت مفككة أو غير مجمعة بشرط أن تعتبر أصنافاً كاملة أو تامة الصنع بمقتضى أحكام الجزء الأول من هذه القاعدة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">7 - من أجل تطبيق أحكام هذه القاعدة ، يقصد بعبارة " الأصناف التي تقدم مفككة أو غير مجمعة " الأصناف التي تجمع مكوناتها إما بواسطة أدوات تثبيت بسيطة (براغي ، صواميل ، ... إلخ) أو بواسطة البرشمة أو اللحام مثلاً، بشرط ألا يتضمن ذلك سوى عمليات التجميع البسيطة . لا يؤخذ بعين الإعتبار في هذا المجال تعقيدات طريقة التجميع . إلا أنه يجب ألا تخضع المكونات <span class="highlight">لأيه</span> عمليات شغل لاحقة من أجل <span class="highlight">إستكمال</span> عملية تصنيعها . أما المكونات غير المجمعة لصنف ما إذا قدمت بأعداد تزيد عن العدد اللازم لتكوين الصنف الكامل فإنها تبند بصورة منفصلة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">8 - هناك حالات تشملها هذه القاعدة قد ذكرت في الإعتبارات العامة للأقسام أو الفصول (مثال ذلك ، ملاحظات القسم السادس عشر والفصول <span class="highlight">44</span> ، <span class="highlight">86</span> ، <span class="highlight">87</span> ، <span class="highlight">89</span>) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">9 - في ضوء نطاق بنود الأقسام من 1 الى 6 ، فإن هذا الجزء من القاعدة لا ينطبق عادة على منتجات تلك الأقسام .</p>
+    </div>
+    <div class="page-number-style">3</div>
+  </div>
+  <div class="page">
+    <h2 class="section-title-style" style="font-size: 18pt; text-align: right !important; margin-bottom: 0.5cm;">القاعدة الثانية (ب)</h2>
+    <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.3cm; font-size: 14pt; text-align:right;">المنتجات المخلوطة أو المركبة</p>
+    <div class="content-style">
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">10 - تخص الفقرة (ب) من القاعدة الثانية بالمنتجات المخلوطة والأصناف المركبة، وبالسلع المكونة من مادتين أو أكثر . ان البنود التي تتعلق بهذه القاعدة هي البنود التي تنص على مادة معينة مثل البند <span class="highlight">05.03</span> "شعر الخيل" والبنود التي تنص على مصنوعات مادة معينة كالبند <span class="highlight">45.03</span> "مصنوعات من فلين طبيعي" . يلاحظ أن هذه القاعدة تطبق فقط <span class="highlight">إلا لم</span> تنص البنود أو ملاحظات الأقسام أو الفصول على خلاف ذلك . فمثلاً البند <span class="highlight">15.03</span> ينص على ( زيت شحم الخنزير ، " غير مخلوط ") . ان المخاليط التي تعتبر من المحضرات المنصوص عليها في إحدى ملاحظات الأقسام أو الفصول أو في نص أحد البنود تبند وفقاً لأحكام القاعدة الأولى .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">11 - إن أثر هذه القاعدة هو توسيع نطاق أى بند ينص على مادة معينة ليشمل المخاليط أو المركبات من هذه المادة مع مواد أخر . كما أن أثر هذه القاعدة هو توسيع نطاق أى بند ينص على أصناف من مادة معينة ليشمل الأصناف المكونة جزئياً من هذه المادة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">12 - إلا انه ليس من شأن هذه القاعدة توسيع نطاق البند لتدخل فيه السلع غير المشمولة في نصه كما تقضي بذلك القاعدة الأولى؛ ويحدث هذا عند إضافة مادة ما الى سلعة معينة تفقدها صفة الأصناف المذكورة بالبند.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.5cm;">13 - نتيجة لهذه القاعدة ، فإن المنتجات المخلوطة والأصناف المركبة والسلع المكونة من مادتين أو أكثر إذا وجد، لأول وهلة، انه يمكن تبنيدها في بندين أو أكثر ، ففي هذه الحالة يجب أن تبند الأصناف لأحكام القاعدة (الثالثة).</p>
+
+      <h2 class="section-title-style" style="font-size: 18pt; text-align: right !important; margin-bottom: 0.5cm; margin-top: 1cm;">القاعدة الثالثة</h2>
+      <p style="text-indent: 1cm; margin-bottom: 0.3cm;">إذ رؤى ، لأول وهلة ، أن سلعاً قد تدخل في بندين أو أكثر ، تبعاً لما جاء في القاعدة الثانية (ب) السابقة أو لأي سبب أخر، فإن التبنيد يتم على الوجه الأتي :</p>
+      <p style="text-indent: 0cm; margin-right:1cm; margin-bottom: 0.3cm;">( أ ) يرجح البند الأكثر تخصيصاً الذي يعطى وصفاً أكثر تحديداً على البنود ذات النصوص العامة . إلا أنه، عندما يشير بندان أو أكثر، كل على حده، إلى جزء فقط من المواد الداخلة في تركيب المنتجات المخلوطة أو المركبة، أو ينص على جزء من الأصناف المهيأة بشكل مجموعات (طقم) للبيع بالتجزئة ، فإن هذه (</p>
+    </div>
+    <div class="page-number-style">4</div>
+  </div>
+  <div class="page">
+    <div class="content-style">
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top:0cm;">البنود تعتبر متساوية في التخصيص بالنسبة لتلك الأصناف حتى وإن كان أحد هذه البنود يعطى وصفاً أكثر <span class="highlight">إكتمالاً</span> أو أكثر دقة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(ب) المنتجات المخلوطة أو السلع المركبة المكونة من مواد مختلفة أو الناتجة عن تجميع مكونات مختلفة، وكذلك الأصناف المهيأة بشكل مجموعات (طقم) للبيع بالتجزئة ، والتي <span class="highlight">لايمكن</span> تبنيدها تطبيقاً للقاعدة الثالثة ( أ ) ، يجب أن تبند تبعاً للمادة أو للمكون الذي يضفي عليها الصفة الأساسية ، وذلك إذا أمكن تحديد هذه الصفة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.5cm;">(ج) عندما يتعذر تبنيد السلع بمقتضى أحكام القاعدتين الثالثة ( أ ) ، (ب) ، فإنها تبند في البند الذي يرد متأخراً في الترتيب الرقمي من بين البنود التي يمكن أخذها بعين الإعتبار على حد سواء .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.7cm; margin-bottom: 0.3cm; font-size: 14pt;">ملاحظة تفسيرية :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">1 - هذه القاعدة تتضمن ثلاث طرق لتبنيد السلع التي قد تدخل ، لأول وهلة ، في بندين أو أكثر إما تطبيقاً لنصوص القاعدة الثانية (ب) أو لأي سبب أخر، ويعمل بهذه الطرق وفقاً لترتيب تسلسلها في القاعدة . لذلك، فإن القاعدة الثالثة (ب) لا تطبق إلا إذا تعذر التبنيد عملاً بالقاعدة الثالثة ( أ ) . وإذا تعذر التبنيد عملاً بالقاعدتين الثالثة ( أ ) ، (ب) ، تطبق القاعدة الثالثة (ج) . وعلى ذلك يكون ترتيب الأولوية في التبنيد كالأتي :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">( أ ) البند الأكثر تخصيصاً ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">(ب) الصفة الأساسية ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">(ج) البند الذي يرد متأخراً في الترتيب الرقمي .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">2 - تطبق هذه القاعدة فقط، <span class="highlight">مالم</span> ينص على خلاف ذلك ، في نصوص البنود أو ملاحظات الأقسام أو الفصول أحكاماً مخالفة . مثال ذلك ، تنص الملاحظة رقم 4 (ب) من الفصل <span class="highlight">97</span> على ان السلع التي يمكن أن تدخل في بند ما من مجموعة البنود من <span class="highlight">97.01</span> الى <span class="highlight">97.05</span> وفي البند <span class="highlight">97.06</span> ، يجب أن تبند في البند الأكثر تخصيصاً من بنود المجموعة .</p>
+
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: right; margin-bottom: 0.5cm; margin-top:1cm;">القاعدة الثالثة ( أ )</h3>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">3 - إن الطريقة الأولى للتبنيد المبينة في القاعدة الثالثة ( أ ) تقضى بأن البند الأكثر تخصيصاً ينبغي أن تكون له الأولوية على البنود ذات النصوص العامة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">4 - يتعذر عملياً وضع قواعد جامدة وحاسمة تمكن من تحديد أى من البنود هو الأكثر تخصيصاً بالنسبة للسلع المقدمة ، ومع ذلك يمكن القول بصورة عامة :</p>
+    </div>
+    <div class="page-number-style">5</div>
+  </div>
+<div class="page">
+    <div class="content-style" style="padding-top: 0.1cm;"> <p style="text-indent: 0cm; margin-bottom: 0.3cm;">أ - أن البند الذي ينص بالإسم على صنف معين يعتبر أكثر تخصيصا من البند الذي ينص على فئة من الأصناف من نفس النوع . (مثال ذلك ، أجهزة حلاقة الذقن وقص الشعر ذات محرك كهربائي مدمجا بها ، تبند في البند <span class="highlight">85.10</span> وليس في البند <span class="highlight">85.08</span> كمحدد آلية – كهربائية تستعمل باليد أو البند <span class="highlight">85.09</span> كأجهزة آلية كهربائية للإستعمال المنزلي ذات محرك كهربائي مدمجا بها ) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">ب- أن البند الذي يعرف السلعة بشكل أوضح وبصورة أدق يعتبر أكثر تخصيصا من البند الذي يعطى تعريفاً أقل وضوحاً أو إكتمالاً . ويمكن تقديم الأمثلة التالية على ذلك :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">1 – البسط النسجية ذات الوبر المعدة للإستعمال في السيارات لاتدخل في البند <span class="highlight">87.08</span> كلوازم للسيارات ولكن في البند <span class="highlight">57.03</span> حيث أنها مذكورة بصورة أكثر تخصيصاً كأغطية أرضيات .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">2 – الزجاج المأمون بدون أطر المكون من زجاج مقسى أو منضد بأشكال مناسبة للتركيب في الطائرات لا يدخل في البند <span class="highlight">88.03</span> باعتباره أجزاء لأصناف البند <span class="highlight">88.01</span> أو <span class="highlight">88.02</span> وإنما يدخل في البند <span class="highlight">70.07</span> حيث أنه مذكور في البند الأخير بصورة أكثر تحديداً باعتباره زجاجاً مأموناً .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top: 0.5cm;">5 - إلا إنه أشار بندان أو أكثر ، كل على حده ، إلى جزء فقط من المواد الداخلة في تركيب المنتجات المخلوطة أو المركبة أو الى جزء فقط من الأصناف المهيأة بشكل مجموعات (أطقم) للبيع بالتجزئة، فإن هذه البنود تعتبر متساوية في التخصيص بالنسبة لتلك الأصناف ، حتى وإن كان أحد هذه البنود يعطى وصفاً أكثر <span class="highlight">إكتمالا</span> أو أكثر دقة . وفي مثل هذه الحالات، فإن تبنيد مثل هذه الأصناف يخضع لأحكام القاعدة الثالثة (ب) أو (ج) .</p>
+
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: center; margin-bottom: 0.5cm; margin-top:1cm;">القاعدة الثالثة (ب)</h3>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">6 - الطريقة الثانية تتعلق فقط بالحالات التالية وتطبق فقط إذا تعذر إستخدام القاعدة الثالثة ( أ ) :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">أ - المنتجات المخلوطة .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">ب- السلع المركبة المؤلفة من مواد مختلفة .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">ج - السلع المركبة المؤلفة من مكونات مختلفة .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">د - السلع المهيأة للبيع بالتجزئة بشكل مجموعات ( أطقم ) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">7 - في جميع الحالات السابقة ينبغي أن يتم تبنيد السلع كما لو كانت مؤلفة من المادة أو المكون الذي يضفى عليها الصفة الأساسية ، كلما أمكن تطبيق هذا المعيار .</p>
+    </div>
+    <div class="page-number-style">6</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="padding-top: 0.1cm;"> <p style="text-indent: 0cm; margin-bottom: 0.3cm;">8 - يختلف العامل الذي يحدد الصفة الأساسية بإختلاف أنواع السلع . فقد تحدده مثلاً ، طبيعة المادة المكونة أو مكونات السلع أو الحجم أو الكمية أو الوزن أو القيمة أو حتى دور المادة المكونة بالنسبة لإستعمال السلعة.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">9 - من أجل تطبيق أحكام هذه القاعدة، فإن عبارة " السلع المركبة والمكونة من مواد مختلفة " لا تعني فقط تلك التي تربطت مكوناتها التي بعضها البعض لتولد وحدة كاملة غير قابلة عملياً للفصل ، بل تشمل أيضاً السلع المركبة ذات المكونات القابلة للفصل، بشرط أن تكون هذه المكونات مهيأة لبعضها البعض وأن يكتمل كل منها الآخر وأن تؤلف معاً وحدة كاملة لا تعرض عادة للبيع كأجزاء منفصلة . ويمكن تقديم الأمثلة التالية على ذلك :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">أ - منافض السجائر " طفايات " التي تتألف من حامل مندمج مع وعاء للرماد قابل للنزع .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">ب- الأرفف الصغيرة للتوابل من النوع المستخدم في المنازل السكنية والمؤلفة من إطار مصمم خصيصاً لها (عادة من الخشب) وعدد ملائم من برطمانات التوابل ذات حجم وشكل مناسبين . و كقاعدة عامة ، فإن مكونات هذه السلع المركبة تكون مهيأة في أغلفة أو عبوات مشتركة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top: 0.5cm;">10 - من أجل تطبيق أحكام هذه القاعدة يقصد بعبارة " السلع المهيأة بشكل مجموعات (أطقم) للبيع بالتجزئة " تلك السلع التي :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">( أ ) تتألف من صنفين مختلفين على الأقل يمكن تبنيدهما ، لأول وهلة ، في بنود مختلفة ولذلك، فإن ستة شوك للحوى ، مثلاً ، لايمكن إعتبارها كمجموعة " طقم " وفقاً لمفهوم هذه القاعدة ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">(ب) تتألف من منتجات أو أصناف مهيأة معاً لتحقيق غرض معين أو لتأدية نشاط محدد ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">(ج) أن تكون مهيأة بطريقة مناسبة للبيع مباشرة <span class="highlight">لمستخدميها</span> دون إعادة تغليفها ( مثال ذلك ، في صناديق أو علب أو صواني ) . ولذلك تشمل هذه العبارة مثلاً ، المجموعات المؤلفة من مواد غذائية مختلفة المعدة لإستعمالها معاً في تحضير وجبة غذائية جاهزة . أمثلة من المجموعات " أطقم " والتي يمكن أن تبند طبقاً للقاعدة الثالثة (ب):</p>
+      <p style="text-indent: 2cm; margin-right: 2cm; margin-bottom: 0.2cm;">(1) أ – مجموعات مؤلفة من ساندويتش من اللحم البقري مع أو بدون الجبن في <span class="highlight">قطعتين</span> (البند <span class="highlight">16.02</span>) مقدمة مع شرائح مقلية من البطاطس (البند <span class="highlight">20.04</span>) تدخل هذه المجموعة في البند <span class="highlight">16.02</span>.</p>
+      <p style="text-indent: 2cm; margin-right: 2cm; margin-bottom: 0.2cm;">ب – مجموعات معدة مكوناتها لأن تستعمل معاً في تحضير وجبة غذائية من العجائن الغذائية " المعكرونة " ، " الأسباجيتي " المؤلفة من : كيس صغير من المعكرونة الأسباجيتي غير المطبوخة (البند <span class="highlight">19.02</span>)، كيس صغير من الجبن المبشور</p>
+    </div>
+    <div class="page-number-style">7</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="padding-top: 0.1cm;"> <p style="text-indent: 2cm; margin-right: 2cm; margin-bottom: 0.2cm;">(البند <span class="highlight">04.06</span>) ، علبة معدنية صغيرة بها صلصة طماطم " بندورة " (البند <span class="highlight">21.03</span>) ، وكلها مقدمة في علبة من الورق المقوى. تدخل هذه المجموعة في (البند <span class="highlight">19.02</span>) . إلا أنه، لاتشمل هذه القاعدة مختارات من المنتجات المهيأة معاً والمؤلفة مثلاً من :</p>
+      <p style="text-indent: 2.5cm; margin-right: 2.5cm; margin-bottom: 0.2cm;">– علبة معدنية من الربيان "جمبري" (البند <span class="highlight">16.05</span>) ، علبة معدنية من عجينة الكبد الحيواني (البند <span class="highlight">16.02</span>) ، علبة معدنية من الجبن (البند <span class="highlight">04.06</span>)، علبة معدنية من شرائح لحم الخنزير المقدد ( البند <span class="highlight">16.02</span> ) ، علبة معدنية من تشكيلة من السجق (البند <span class="highlight">16.01</span>) .</p>
+      <p style="text-indent: 2.5cm; margin-right: 2.5cm; margin-bottom: 0.2cm;">– زجاجة من المشروبات الروحية ( البند <span class="highlight">22.08</span> ) وزجاجة من النبيذ ( البند <span class="highlight">22.04</span>). في حالة هذين المثالين وفي المختارات من المنتجات المماثلة، فإن كل صنف يجب أن يبند بصورة مستقلة في البند الأكثر تخصيصاً الملائم له .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">(2) مجموعات تصفيف الشعر والمؤلفة من مقص كهربائي للشعر (البند <span class="highlight">85.10</span>)، مشط (البند <span class="highlight">96.15</span> ) ، مقص ( البند <span class="highlight">82.13</span> ) وفرشاة (البند <span class="highlight">96.03</span>) ، ومنشفة من مواد نسجية (البند <span class="highlight">63.02</span>) مقدمة في حافظة من لدائن إصطناعية (البند <span class="highlight">42.02</span>) . تدخل هذه المجموعة في (البند <span class="highlight">85.10</span>).</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">(3) أطقم للرسم مشتملة على مسطرة (البند <span class="highlight">90.17</span>)، دائرة مرقمة للحساب (البند <span class="highlight">90.17</span>)، وفرجار للرسم (البند <span class="highlight">90.17</span> ) ، وقلم رصاص (البند <span class="highlight">96.09</span>) ، وبراية أقلام رصاص (البند <span class="highlight">82.14</span>)، مقدمة في حافظة من لدائن إصطناعية (البند <span class="highlight">42.02</span>) . تدخل هذه المجموعة في (البند <span class="highlight">90.17</span>).</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;"> وفيما يتعلق بالمجموعات المذكورة أعلاه ، فإن عملية التبنيد تتم وفقاً للمكون أو المكونات التي يمكن إعتبارها تضفي الصفة الأساسية على المجموعة "الطقم " ككل.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top: 0.5cm;">11 - لا يمكن تطبيق هذه القاعدة على السلع المؤلفة من مكونات مختلفة محظرة بصورة منفصلة ومقدمة معاً (وإن كانت في غلاف مشترك) بسبب ثابتة لأغراض عمليات التصنيع كالمشروبات مثلاً .</p>
+
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: center; margin-bottom: 0.5cm; margin-top:1cm;">القاعدة الثالثة ( ج )</h3>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">12 - عندما يتعذر تبنيد السلع بمقتضى أحكام القاعدة الثالثة (أ) أو (ب)، فإنها تبند في البند الذي يرد متأخراً في الترتيب الرقمي من بين تلك البنود التي يمكن أخذها بعين الإعتبار على حد سواء . (</p>
+    </div>
+    <div class="page-number-style">8</div>
+  </div>
+  <div class="page">
+    <h2 class="chapter-title-style" style="font-size: 18pt; margin-bottom: 0.8cm;">القاعدة الرابعة</h2>
+    <div class="content-style">
+      <p style="text-indent: 1cm; margin-bottom: 0.5cm;">تتبع الأصناف التي لا يمكن تبنيدها وفقاً للقواعد السابقة بند الأصناف الأكثر مماثلة .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.7cm; margin-bottom: 0.3cm; font-size: 14pt;">ملاحظة تفسيرية :</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(1) تتعلق هذه القاعدة بالسلع التي لايمكن تبنيدها وفق القواعد العامة من الأولى حتى الثالثة، وتنص هذه القاعدة على أن مثل هذه السلع تتبع بند الأصناف الأكثر مماثلة .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(2) عند التبنيد وفقاً للقاعدة الرابعة ، فمن الضرورى مقارنة السلع المقدمة من السلع المماثلة لكي يتم تحديد السلع الأكثر مماثلة لهذه السلعة المقدمة. ثم يجب أن تبند السلع المقدمة في بند السلع الأكثر مماثلة لها.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.5cm;">(3) ومن الطبيعي أن المماثلة يمكن أن تعتمد على عدة عوامل مثل مواصفات السلعة والخصائص المميزة لها والغرض من إستعمالها ..إلخ .</p>
+
+      <h2 class="chapter-title-style" style="font-size: 18pt; margin-top: 1cm; margin-bottom: 0.5cm;">القاعدة الخامسة</h2>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(1) بالإضافة الى الأحكام السابقة ، تطبق القواعد التالية على السلع المشار إليها أدناه :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">( أ ) علب وغلافات أجهزة التصوير والأدوات الموسيقية والأسلحة وأدوات الرسم والحلى والأوعية المماثلة، ذات الشكل الخاص أو المجهزة خصيصاً لإحتواء صنف معين أو مجموعات أصناف (طقم)، والقابلة للإستعمال المديد، المقدمة مع الأصناف المعدة لها، تبند مع هذه الأصناف عندما تكون من الأنواع التي تباع عادة معها . غير أن هذه القاعدة لاتنطبق على الأوعية التي تضفى على المجموعة بكاملة الصفة الأساسية ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">(ب) مع مراعاة أحكام القاعدة الخامسة ( أ ) أعلاه ، فإن مواد التغليف وأوعية التعبئة المقدمة محتوية على سلع تبند مع هذه السلع إذا كانت من الأنواع التي تستخدم عادة في تغليفها . إلا أن أحكام هذه الفقرة ليست إلزامية عندما تكون مواد التغليف وأوعية التعبئة قابلة للإستعمال المتكرر بوضوح .</p>
+
+      <p class="font-bold" style="text-indent: 0cm; margin-top: 0.7cm; margin-bottom: 0.3cm; font-size: 14pt;">ملاحظة تفسيرية :</p>
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: center; margin-bottom: 0.3cm;">القاعدة الخامسة ( أ )</h3>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.3cm; font-size: 14pt; text-align:center !important;">(العلب والغلافات والأوعية المماثلة)</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">(1) إن هذه القاعدة تشمل فقط الأوعية التي يتوفر فيها مايلي :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">أ – أن تكون مصممة أو مجهزة خصيصاً لتحتوى صنفاً معيناً أو مجموعة من الأصناف (أطقم) تعنى أنها مصممة خصيصاً لتناسب الصنف المعدة لأجلة . أن بعض الأوعية تكون بذات شكل الصنف الذي تحتويه .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">ب – أن تكون معدة للإستعمال المديد، بمعنى أنها مصممة بدرجة من المتانة العالية والتحمل مقارنة مع الأصناف التي أعدت لأجلها . وهذه الأوعية تستخدم أيضاً لحماية الأصناف المعدة لها في</p>
+    </div>
+    <div class="page-number-style">9</div>
+  </div>
+  <div class="page">
+    <div class="content-style" style="padding-top: 0.1cm;"> <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">فترات عدم إستخدامها (مثلاً ، أثناء النقل أو التخزين) . إن هذه المعايير تساعد على التمييز بين هذه الأوعية وبين الأغلفة البسيطة.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm;">ج - أن تقدم مع الأصناف المعدة لأجلها ، وإن كانت الأصناف معبأة بصورة منفصلة لتسهيل نقلها . أما الأوعية التي تقدم بصورة مستقلة ، فيجب أن تدخل في بنودها الملائمة ؛</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.2cm;">د - أن تكون من الأنواع التي تباع عادة مع هذه الأصناف .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">هـ - ألا تضفى الصفة الأساسية لها على مجموعة السلع التي تحويها .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top: 0.5cm;">2 - أمثلة للأوعية التي تقدم مع الأصناف المعدة لأجلها والتي تبند تبعاً لهذه القاعدة :</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">أ – علب المجوهرات (البند <span class="highlight">71.13</span>) ؛</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">ب – علب وحافظات الآلات الحلاقة الكهربائية (البند <span class="highlight">85.10</span>) .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">ج – علب وحافظات النظارات المقربة والمنظار المكبر (البند <span class="highlight">90.05</span>) .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.2cm;">د – علب وأكياس وحافظات الأدوات الموسيقية (البند <span class="highlight">92.02</span>) .</p>
+      <p style="text-indent: 1cm; margin-right: 1cm; margin-bottom: 0.3cm;">هـ – علب وأجربة البنادق والمسدسات (البند <span class="highlight">93.03</span>) .</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm; margin-top: 0.5cm;">3 - أمثلة على الأوعية التي لا تشملها هذه القاعدة : علبة من الفضة محتوية على شاى أو وعاء من السيراميك للزينة محتوياً على حلوى .</p>
+
+      <h3 class="section-title-style font-bold" style="font-size: 16pt; text-align: center; margin-bottom: 0.3cm; margin-top: 1cm;">القاعدة الخامسة ( ب )</h3>
+      <p class="font-bold" style="text-indent: 0cm; margin-bottom: 0.3cm; font-size: 14pt; text-align:center !important;">مواد تغليف وأوعية التعبئة</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.3cm;">4 - تحكم هذه القاعدة تبنيد مواد التغليف وأوعية التعبئة من الأنواع المستخدمة عادة في تعبئة السلع . ومع ذلك فإن هذه القاعدة لاتنطبق عندما تكون مواد التغليف أو أوعية التعبئة معدة بصورة واضحة <span class="highlight">ومعتادة</span> للإستخدام المتكرر مثال ذلك : بعض البراميل المعدنية أو أوعية من حديد أو صلب لتعبئة الغاز المسيل أو المضغوط.</p>
+      <p style="text-indent: 0cm; margin-bottom: 0.5cm;">5 - تخضع تطبيق هذه القاعدة لأحكام القاعدة الخامسة ( أ ) . ولذلك ، فإن تبنيد العلب والأغلفة والأوعية المماثلة من الأنواع المذكورة في القاعدة الخامسة ( أ ) يجب ان يتحدد وفقاً لأحكامها .</p>
+
+      <h2 class="chapter-title-style" style="font-size: 18pt; margin-top: 1cm; margin-bottom: 0.5cm;">القاعدة السادسة</h2>
+    </div>
+    <div class="page-number-style">10</div>
+  </div>
+
+</body>
+</html>
